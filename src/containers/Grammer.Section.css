@@ -1,0 +1,99 @@
+section.grammer-section + section.grammer-section {
+  margin-top: 30pt;
+}
+
+section.grammer-section > article {
+  position: relative;
+  padding-left: 90pt;
+  margin-top: 10pt;
+  font-weight: 300;
+  transition: .25s;
+}
+section.grammer-section > article:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: calc(100% + 20pt);
+  width: 0;
+  border-left: 1pt solid #aaa;
+  left: 40pt;
+}
+section.grammer-section > article > p {
+  margin: 0;
+  height: 20pt;
+  line-height: 20pt;
+}
+section.grammer-section > article > p + :not(p),
+section.grammer-section > article > p:not(:first-child) {
+  margin-top: 8pt;
+}
+
+section.grammer-section.hide > article {
+  height: 0;
+  overflow: hidden;
+  transition: .25s;
+}
+section.grammer-section.hide + section.grammer-section {
+  margin-top: 0;
+}
+
+div.label-header {
+  display: block;
+  position: relative;
+  padding: 12.5pt;
+  font-size: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+div.label-header > span.label-number {
+  display: inline-block;
+  width: 50pt;
+  height: 50pt;
+  border: 3pt solid #aaa;
+  border-style: double;
+  transform: rotate(45deg);
+  transform-origin: center center;
+  transition: .25s;
+}
+div.label-header:hover > span.label-number {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #333;
+  transition: .25s;
+}
+
+div.label-header > span.label-number:before {
+  content: attr(data-number);
+  display: inline-block;
+  font-weight: 100;
+  width: 50pt;
+  height: 50pt;
+  font-size: 20pt;
+  line-height: 50pt;
+  text-align: center;
+  vertical-align: middle;
+  transform: rotate(-45deg);
+}
+
+div.label-header > h2.caption {
+  display: inline-block;
+  margin: 0 0 0 20pt;
+  vertical-align: middle;
+  font-size: 20pt;
+  line-height: 50pt;
+  font-weight: 100;
+}
+
+div.label-header > h2.caption:before {
+  content: '';
+  display: inline-block;
+  width: 50pt;
+  height: 0pt;
+  border-top: 1pt solid #aaa;
+  vertical-align: middle;
+  margin-right: 10pt;
+}

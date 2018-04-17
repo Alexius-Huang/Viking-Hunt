@@ -1,0 +1,78 @@
+label.checkbox-input {
+  display: inline-block;
+  height: 30pt;
+  line-height: 30pt;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+label.checkbox-input + label.checkbox-input {
+  margin-left: 15pt;
+}
+label.checkbox-input > input[type="checkbox"] {
+  display: none;
+}
+label.checkbox-input > span.checkbox-display {
+  display: inline-block;
+  width: 30pt;
+  height: 30pt;
+  background-color: #555;
+  transition: .25s;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 2pt 1pt 3pt #222;
+}
+label.checkbox-input > span.checkbox-display:before,
+label.checkbox-input > span.checkbox-display:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 5pt;
+  top: 14pt;
+  width: 20pt;
+  height: 2pt;
+  border-radius: 1pt;
+  background-color: #333;
+  transition: .25s;
+}
+label.checkbox-input > span.checkbox-display:before {
+  transform: rotate(45deg);
+}
+label.checkbox-input > span.checkbox-display:after {
+  transform: rotate(-45deg);
+}
+label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display { 
+  background-color: #66BB6A;
+  transition: .25s;
+}
+label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:before,
+label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:after {
+  transition: .25s;
+  background-color: #eee;
+}
+label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:before {
+  transform: rotate(-120deg);
+  width: 10pt;
+  top: 18pt;
+}
+label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:after {
+  transform: rotate(120deg);
+  left: 7.5pt;
+}
+
+label.checkbox-input > span.checkbox-content {
+  display: inline-block;
+  height: 30pt;
+  line-height: 30pt;
+  vertical-align: top;
+  margin-left: 8pt;
+  transition: .25s;
+  color: #bbb;
+}
+
+label.checkbox-input > input[type="checkbox"]:checked ~ span.checkbox-content {
+  transition: .25s;
+  color: #eee;
+}
