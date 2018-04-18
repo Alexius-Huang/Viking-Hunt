@@ -1,4 +1,5 @@
 main {
   box-sizing: border-box;
   padding: 20pt;
+  counter-reset: section -1;
 }

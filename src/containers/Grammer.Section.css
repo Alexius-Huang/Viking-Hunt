@@ -67,7 +67,8 @@ div.label-header:hover > span.label-number {
 }
 
 div.label-header > span.label-number:before {
-  content: attr(data-number);
+  counter-increment: section;
+  content: counter(section);
   display: inline-block;
   font-weight: 100;
   width: 50pt;

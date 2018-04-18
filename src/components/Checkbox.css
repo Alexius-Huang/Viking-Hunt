@@ -18,10 +18,13 @@ label.checkbox-input > span.checkbox-display {
   display: inline-block;
   width: 30pt;
   height: 30pt;
-  background-color: #555;
+  /* background-color: #555; */
   transition: .25s;
   border-radius: 50%;
   position: relative;
+  border: 3pt solid #ddd;
+  border-style: double;
+  box-sizing: border-box;
   box-shadow: 2pt 1pt 3pt #222;
 }
 label.checkbox-input > span.checkbox-display:before,
@@ -29,12 +32,12 @@ label.checkbox-input > span.checkbox-display:after {
   content: '';
   display: inline-block;
   position: absolute;
-  left: 5pt;
-  top: 14pt;
-  width: 20pt;
+  left: 4pt;
+  top: 11pt;
+  width: 16pt;
   height: 2pt;
   border-radius: 1pt;
-  background-color: #333;
+  background-color: #555;
   transition: .25s;
 }
 label.checkbox-input > span.checkbox-display:before {
@@ -55,11 +58,12 @@ label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:af
 label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:before {
   transform: rotate(-120deg);
   width: 10pt;
-  top: 18pt;
+  top: 15pt;
 }
 label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:after {
   transform: rotate(120deg);
-  left: 7.5pt;
+  left: 7pt;
+  top: 12pt;
 }
 
 label.checkbox-input > span.checkbox-content {

@@ -13,13 +13,13 @@ class Section extends Component {
   }
 
   render() {
-    const { number, caption, children } = this.props;
+    const { caption, children } = this.props;
     const { hide } = this.state;
 
     return (
       <section className={`grammer-section ${hide ? 'hide' : ''}`}>
         <div className="label-header" onClick={this.toggleHide}>
-          <span className="label-number" data-number={number} />
+          <span className="label-number" />
           <h2 className="caption">{caption}</h2>
         </div>
 

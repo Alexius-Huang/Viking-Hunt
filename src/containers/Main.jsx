@@ -11,12 +11,12 @@ class Main extends Component {
   render() {
     return (
       <main>
-        <Section number={0} caption="Norwegian Alphabets">
+        <Section caption="Norwegian Alphabets">
           <p>Norwegian consists of 29 alphebet, with 26 common Latin alphabets and 3 special characters.</p>
           <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Å Ø</p>
         </Section>
 
-        <Section number={1} caption="Greetings & Common Phrases">
+        <Section caption="Conversation I - Greetings & Common Phrases">
           <p>Simple ways of saying <b>"Hello"</b></p>
           <Checkbox>Halo! Hei!</Checkbox>
 
@@ -34,6 +34,22 @@ class Main extends Component {
             'Har du det bra?',
             'Står det bra til?'
           ])}
+        </Section>
+
+        <Section caption="Personal Pronouns (Pronomen)">
+          Personal Pronouns
+        </Section>
+
+        <Section caption="Nouns (Substantiv)">
+          Nouns
+        </Section>
+
+        <Section caption="Verbs">
+          Verbs
+        </Section>
+
+        <Section caption="Forming Sentences">
+          Forming Sentences
         </Section>
       </main>
     );
