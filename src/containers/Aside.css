@@ -1,0 +1,37 @@
+aside {
+  padding: 20px;
+  position: fixed;
+  left: 0pt;
+  display: inline-block;
+  width: 200pt;
+  height: auto;
+  font-size: 12pt;
+  vertical-align: top;
+  font-weight: 300;
+  text-align: left;
+  counter-reset: anchor -1;
+}
+
+aside > a {
+  display: block;
+  transition: .25s;
+  padding: 5pt 10pt 5pt 20pt;
+  font-size: 10pt;
+  cursor: pointer;
+  color: #ddd;
+  text-decoration: none;
+  position: relative;
+}
+aside > a:before {
+  position: absolute;
+  counter-increment: anchor;
+  content: counter(anchor);
+  display: inline-block;
+  left: 10pt;
+  /* top: 0; */
+}
+
+aside > a:hover {
+  background-color: #444;
+  transition: .25s;
+}

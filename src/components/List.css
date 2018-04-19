@@ -1,0 +1,31 @@
+ul.List {
+  padding-left: 15pt;
+}
+
+ul.List > li {
+  list-style-type: none;
+  position: relative;
+  height: 24pt;
+  line-height: 24pt;
+  transition: .25s;
+  user-select: none;
+}
+
+ul.List > li:before {
+  content: '\f096';
+  font-family: 'FontAwesome';
+  font-size: 10pt;
+  color: #777;
+  height: 24pt;
+  line-height: 24pt;
+  display: inline-block;
+  margin: 0 10pt;
+}
+
+ul.List > li.active {
+  color: #66BB6A;
+}
+ul.List > li.active:before {
+  content: '\f046';
+  color: #66BB6A;
+}

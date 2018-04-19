@@ -1,5 +1,5 @@
 section.grammer-section {
-  width: 700pt;
+  width: 600pt;
 }
 
 section.grammer-section + section.grammer-section {
@@ -12,6 +12,7 @@ section.grammer-section > article {
   margin-top: 10pt;
   font-weight: 300;
   transition: .25s;
+  letter-spacing: .5pt;
 }
 section.grammer-section > article:before {
   content: '';
@@ -27,7 +28,7 @@ section.grammer-section > article > p {
   height: auto;
   box-sizing: border-box;
   padding: 5pt 10pt;
-  width: 700pt;
+  width: 600pt;
   line-height: 20pt;
   text-align: justify;
   text-justify: inter-word;
@@ -109,8 +110,10 @@ div.label-header > span.label-number:before {
 div.label-header > h2.caption {
   display: inline-block;
   margin: 0 0 0 20pt;
+  word-wrap: nowrap;
+  overflow-x: visible;
   vertical-align: middle;
-  font-size: 20pt;
+  font-size: 18pt;
   line-height: 50pt;
   font-weight: 100;
   transition: .25s;
@@ -119,7 +122,7 @@ div.label-header > h2.caption {
 div.label-header > h2.caption:before {
   content: '';
   display: inline-block;
-  width: 50pt;
+  width: 20pt;
   height: 0pt;
   border-top: 1pt solid #aaa;
   vertical-align: middle;

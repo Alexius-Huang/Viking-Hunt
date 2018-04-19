@@ -9,6 +9,7 @@ label.checkbox-input {
   -o-user-select: none;
   margin-right: 15pt;
   margin-bottom: 10pt;
+  cursor: pointer;
 }
 label.checkbox-input > input[type="checkbox"] {
   display: none;

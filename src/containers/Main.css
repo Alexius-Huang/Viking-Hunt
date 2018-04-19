@@ -1,5 +1,8 @@
 main {
+  display: inline-block;
   box-sizing: border-box;
   padding: 20pt;
   counter-reset: section -1;
+  text-align: left;
+  position: relative;
 }
