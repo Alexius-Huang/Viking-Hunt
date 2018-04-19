@@ -43,7 +43,16 @@ Aside.defaultProps = {
     'Personal Pronouns (Pronomen)',
     'Nouns (Substantiv)',
     'Verbs',
-    'Forming Sentences'
+    'Forming Sentences',
+    'Asking Questions',
+    'Conversation II - Languages',
+    'Numbers (et tall)',
+    'Vocabulary I',
+    'Modal Verb',
+    'Conversation III - Professions',
+    'Conjunctions (Konjuksjoner)',
+    'Number II (et tall)',
+    'Vocabulary II'
   ]
 }
 

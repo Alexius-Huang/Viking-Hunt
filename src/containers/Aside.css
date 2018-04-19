@@ -21,13 +21,17 @@ aside > a {
   color: #ddd;
   text-decoration: none;
   position: relative;
+  letter-spacing: .5pt;
+  line-height: 15pt;
 }
 aside > a:before {
   position: absolute;
   counter-increment: anchor;
   content: counter(anchor);
   display: inline-block;
-  left: 10pt;
+  left: -5pt;
+  width: 20pt;
+  text-align: right;
   /* top: 0; */
 }
 

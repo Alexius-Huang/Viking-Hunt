@@ -149,6 +149,102 @@ Main.defaultProps = {
         <p key={1}>Forming Sentences</p>
       ]
     ],
+    [
+      'Asking Questions', [
+        <p key={1}>Asking Questions</p>
+      ]
+    ],
+    [
+      'Conversation II - Languages', [
+        <p key={1}>Conversation II - Languages</p>
+      ]
+    ],
+    [
+      'Numbers I (et tall)', [
+        <p key={1}>Counting in Norwegian from 0 ~ 10.</p>,
+        <Table
+          key={2}
+          caption="Number from 0 ~ 10"
+          data={[
+            ['Number', 'Norwegian', 'Number', 'Norwegian'],
+            ['0', 'null', '6', 'seks'],
+            ['1', 'én / éi / et', '7', 'sju / syv'],
+            ['2', 'to', '8', 'åtte'],
+            ['3', 'tre', '9', 'ni'],
+            ['4', 'fire', '10', 'ti'],
+            ['5', 'fem', '', '']
+          ]}
+        />,
+        <p key={3}>Counting in Norwegian from 11 ~ 20.</p>,
+        <Table
+          key={4}
+          caption="Number from 11 ~ 20"
+          data={[
+            ['Number', 'Norwegian', 'Number', 'Norwegian'],
+            ['11', 'elleve', '16', 'seksten'],
+            ['12', 'tolv', '17', 'sytten'],
+            ['13', 'tretten', '18', 'åtten'],
+            ['14', 'fjorten', '19', 'nitten'],
+            ['15', 'femten', '20', 'tjue / tyve']
+          ]}
+        />
+      ]
+    ],
+    [
+      'Vocabulary I', [
+        <p key={1}>Vocabulary I</p>
+      ]
+    ],
+    [
+      'Modal Verb', [
+        <p key={1}>Modal Verb</p>
+      ]
+    ],
+    [
+      'Conversation III - Professions', [
+        <p key={1}>Conversation III - Professions</p>
+      ]
+    ],
+    [
+      'Conjunctions (Konjuksjoner)', [
+        <p key={1}>Conjunctions (Konjuksjoner)</p>
+      ]
+    ],
+    [
+      'Number II (et tall)', [
+        <p key={1}>Counting the tens in Norwegian.</p>,
+        <Table
+          key={2}
+          caption="Tens of Number in Norwegian"
+          data={[
+            ['Number', 'Norwegian', 'Number', 'Norwegian'],
+            ['10', 'ti', '60', 'seksti'],
+            ['20', 'tjue / tyve', '70', 'sytti'],
+            ['30', 'tretti', '80', 'åtti'],
+            ['40', 'førti', '90', 'nitti'],
+            ['50', 'femti', '100', 'et/en hundre']
+          ]}
+        />,
+        <p key={3}>Compound number <strong>combines the tens part and the number 0 ~ 9 part</strong>, for instance, to count from 21 ~ 30:</p>,
+        <Table
+          key={4}
+          caption="Counting from 21 ~ 30"
+          data={[
+            ['Number', 'Norwegian', 'Number', 'Norwegian'],
+            ['21', 'tjueen', '26', 'tjueseks'],
+            ['22', 'tjueto', '27', 'tjuesju / tjuesyv'],
+            ['23', 'tjuetre', '28', 'tjueåtte'],
+            ['24', 'tjuefire', '29', 'tjueni'],
+            ['25', 'tjuefem', '30', 'tretti']
+          ]}
+        />
+      ]
+    ],
+    [
+      'Vocabulary II', [
+        <p key={1}>Vocabulary II</p>
+      ]
+    ],
   ]
 }
 
