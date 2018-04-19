@@ -7,9 +7,8 @@ label.checkbox-input {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
-}
-label.checkbox-input + label.checkbox-input {
-  margin-left: 15pt;
+  margin-right: 15pt;
+  margin-bottom: 10pt;
 }
 label.checkbox-input > input[type="checkbox"] {
   display: none;

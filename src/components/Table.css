@@ -1,0 +1,57 @@
+div.Table {
+  width: 700pt;
+  text-align: center;
+  padding: 10pt 0;
+}
+
+div.Table > div.TableCaption {
+  font-size: 12pt;
+  font-weight: 600;
+  margin-bottom: 15pt;
+}
+
+div.Table > div.TableWrapper {
+  display: inline-block;
+  max-width: 700pt;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-size: 0;
+  border: 3pt solid #aaa;
+  border-style: double;
+}
+
+div.Table > div.TableWrapper > div.TableRow {
+  transition: .25s;
+}
+div.Table > div.TableWrapper > div.TableRow:nth-child(2n) {
+  background-color: #444;
+}
+div.Table > div.TableWrapper > div.TableRow:hover {
+  background-color: #555;
+  transition: .25s;
+}
+div.Table > div.TableWrapper > div.TableRow:first-child {
+  border-bottom: 1pt dashed #aaa;
+}
+
+div.Table > div.TableWrapper > div.TableRow > div.TableHeader,
+div.Table > div.TableWrapper > div.TableRow > div.TableCell {
+  display: inline-block;
+  width: 150pt;
+  font-size: 11pt;
+  text-align: center;
+  vertical-align: top;
+}
+
+div.Table > div.TableWrapper > div.TableRow > div.TableHeader {
+  font-weight: 600;
+  line-height: 35pt;
+  height: 35pt;
+  box-sizing: border-box;
+}
+
+div.Table > div.TableWrapper > div.TableRow > div.TableCell {
+  height: 30pt;
+  line-height: 30pt;
+}
