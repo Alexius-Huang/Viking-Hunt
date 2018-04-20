@@ -60,6 +60,9 @@ section.grammer-section > article > p + :not(p),
 section.grammer-section > article > p:not(:first-child) {
   margin-top: 10pt;
 }
+section.grammer-section > article > p > a {
+  color: #ddd;
+}
 
 section.grammer-section.hide > article {
   height: 0;

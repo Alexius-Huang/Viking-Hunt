@@ -122,9 +122,55 @@ Main.defaultProps = {
           'Tusen takk. (Many thanks.)',
           'Mange takk. (Many thanks.)',
           'Takk skal du ha. (Thanks to you.)',
-          'Være så god. (You\'re welcome.)'
+          'Være så god. (You\'re welcome. / No problem.)'
         ]),
-        <p key={5}>Hint: <i>"Takk skal du ha."</i> normally is written as <i>"Du skal ha takk."</i> which means <strong>"You shall have my thanks."</strong>.</p>
+        <p key={5}>Hint: <i>"Takk skal du ha."</i> normally is written as <i>"Du skal ha takk."</i> which means <strong>"You shall have my thanks."</strong>.</p>,
+        <p key={6}>Excuse or saying sorry:</p>,
+        renderCheckboxes([
+          'Unnskyld! / Unnskyld meg! (Sorry! / Excuse me!)',
+          'Beklager. (Sorry.)'
+        ]),
+        <p key={7}>Saying <strong>"Welcome"</strong></p>,
+        renderCheckboxes(['Velkommen!']),
+        <p key={8}>Confession:</p>,
+        renderCheckboxes([
+          'Jeg elsker deg! (I love you!)',
+          'Jeg er glad i deg! (I\'m fond of you!)'
+        ]),
+        <p key={9}>Saying <strong>"Please"</strong></p>,
+        renderCheckboxes([
+          'Være så snill. (Would you be so kind. / Please)',
+          'Ja, takk. (Yes, please.)',
+          'Vennligst. (Please. [Formal])'
+        ]),
+        <p key={10}>Hint: Norwegians simply aren’t used to modifying every imperative with such an explicit, tacked-on “politeness particle”. You would (hopefully) just convey your friendliness and politeness with your general tone and attitude instead. (According to the question <a href="https://www.quora.com/How-do-you-say-please-in-Norwegian">"How do you say "please" in Norwegian?" in Quora</a>.)</p>
+      ]
+    ],
+    [
+      'Conversation III - Blessings', [
+        <p key={1}><strong>Congratulation</strong> to someone:</p>,
+        renderCheckboxes(['Gratulerer med dagen!']),
+        <p key={2}>Common blessings:</p>,
+        renderCheckboxes([
+          'Lykke til! (Good luck!)',
+          'God tur! / God reise! (Good trip!)',
+          'God sommer! (Good summer!)',
+          'God helg! (Nice weekend!)',
+          'Ha en fin dag! (Have a nice day!)',
+          'Skål! (Cheers)',
+          'God appetitt! / Vel bekomme! (Nice meal!)'
+        ]),
+        <p key={3}>Holiday:</p>,
+        renderCheckboxes([
+          'God ferie! (Good holiday!)',
+          'God ju! (Merry Christmas!)',
+          'God påske! (Happy Easter!)',
+          'Godt nyttår! (Happy new year!)',
+        ]),
+        <p key={4}>Grief:</p>,
+        renderCheckboxes(['Kondolerer. (My condolence.)']),
+        <p key={5}>Sickness improvement:</p>,
+        renderCheckboxes(['God bedring. (Get well soon.)'])
       ]
     ],
     [
@@ -209,8 +255,43 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Conversation II - Languages', [
-        <p key={1}>Conversation II - Languages</p>
+      'Conversation IV - Languages', [
+        <p key={1}>Asking someone who able to speak particular language:</p>,
+        renderCheckboxes([
+          'Kan du tysk? (Can you speak German?)',
+          'Snakke du fransk? (Can you speak French?)'
+        ]),
+        <p key={2}>Response:</p>,
+        renderCheckboxes([
+          'Jeg kan russisk. (I can speak Russian.)',
+          'Jeg kan snakke norsk. (I can speak Norwegian.)'
+        ]),
+        <p key={3}><strong>Don't know</strong> or <strong>don't understand</strong>:</p>,
+        renderCheckboxes([
+          'Jeg vet ikke. (I don\'t know.)',
+          'Jeg forstår / skjønner ikke. (I don\'t understand.)',
+        ]),
+        <p key={4}>Hint: <strong>"ikke"</strong> is one of the <i>sentence circumstance</i> which represent <strong>negativity</strong>. You can skip to this section. (WIP)</p>,
+        <p key={5}>Asking to <strong>repeat</strong> or repeat in specific circumstance:</p>,
+        renderCheckboxes([
+          'Hva sier du? (What did you say?)',
+          'Kan du si det igjen? (Can you say that again?)',
+          'Vær vennlig og snakke saktere? (Please speak more slowly.)',
+          // 'Kan du være så snill å snakke litt saktere? ',
+          'Kan du være så snill å skrive det ned? (Can you write it down?)'
+        ]),
+        <p key={6}>List of languages:</p>,
+        <List
+          key={7}
+          items={[
+            'Norsk (Norwegian)',
+            'Fransk (French)',
+            'Tysk (German)',
+            'Engelsk (English)',
+            'Russisk (Russian)',
+            'Polsk (Polish)'
+          ]}
+        />
       ]
     ],
     [
@@ -255,7 +336,7 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Conversation III - Professions', [
+      'Conversation V - Professions', [
         <p key={1}>Conversation III - Professions</p>
       ]
     ],
