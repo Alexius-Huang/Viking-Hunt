@@ -192,7 +192,7 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Nouns (Substantiv)', [
+      'Nouns I - Substantiv', [
         <p key={1}>Nouns in Norwegian have different types of gender (which are also called the <strong>articles</strong>).</p>,
         <Table
           key={2}
@@ -209,7 +209,7 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Verbs', [
+      'Verbs (Presens & Infinitiv)', [
         <p key={1}>Most of the verb in present tense (presens) adds <strong>r</strong> in the end of the word. For instance:</p>,
         <List
           key={2}
@@ -295,8 +295,8 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Numbers I (et tall)', [
-        <p key={1}>Counting in Norwegian from 0 ~ 10.</p>,
+      'Numbers I', [
+        <p key={1}>Counting numbers (<i>et tall</i>) in Norwegian from 0 ~ 10.</p>,
         <Table
           key={2}
           caption="Number from 0 ~ 10"
@@ -406,6 +406,21 @@ Main.defaultProps = {
         <p key={1}>Vocabulary II</p>
       ]
     ],
+    [
+      'Nouns II - Plural', [
+        <p key={1}>Plural</p>
+      ]
+    ],
+    [
+      'Negative Sentences', [
+        <p key={1}>Negative Sentences</p>
+      ]
+    ],
+    [
+      'Sentence Circumstance', [
+        <p key={1}>Sentence Circumstance (setningsadverbial)</p>
+      ]
+    ]
   ]
 }
 

@@ -43,18 +43,21 @@ Aside.defaultProps = {
     'Conversation II - Common Phrases',
     'Conversation III - Blessings',
     'Personal Pronouns (Pronomen)',
-    'Nouns (Substantiv)',
-    'Verbs',
+    'Nouns I - Substantiv',
+    'Verbs (Presens & Infinitiv)',
     'Forming Sentences',
     'Asking Questions',
     'Conversation IV - Languages',
-    'Numbers (et tall)',
+    'Numbers I',
     'Vocabulary I',
     'Modal Verb',
     'Conversation V - Professions',
     'Conjunctions (Konjuksjoner)',
-    'Number II (et tall)',
-    'Vocabulary II'
+    'Number II',
+    'Vocabulary II',
+    'Nouns II - Plurals',
+    'Negative Sentences',
+    'Sentence Circumstance'
   ]
 }
 
