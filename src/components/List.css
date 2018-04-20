@@ -9,6 +9,7 @@ ul.List > li {
   line-height: 24pt;
   transition: .25s;
   user-select: none;
+  cursor: pointer;
 }
 
 ul.List > li:before {

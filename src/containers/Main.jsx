@@ -56,21 +56,75 @@ Main.defaultProps = {
     ],
     [
       'Conversation I - Greetings & Common Phrases', [
-        <p key={1}>Simple ways of saying <b>"Hello"</b></p>,
+        <p key={1}>Simple ways of saying <strong>"Hello"</strong></p>,
         <Checkbox key={2}>Halo! Hei!</Checkbox>,
-        <p key={3}>Asking someone <b>"How are you?"</b></p>,
+        <p key={3}>Asking someone <strong>"How are you?"</strong></p>,
         renderCheckboxes([
           'Hvordan går det?',
           'Hvordan har du det?',
           'Hvordan står det til?',
           'Hvordan går det med dere?'
         ]),
-        <p key={4}>Asking someone <b>"Is everything Okay?"</b></p>,
+        <p key={4}>Asking someone <strong>"Is everything Okay?"</strong></p>,
         renderCheckboxes([
           'Går det bra?',
           'Har du det bra?',
           'Står det bra til?'
+        ]),
+        <p key={5}>Responding to someone's greeting:</p>,
+        renderCheckboxes([
+          'Bra! (Good!)',
+          'Veldig bra! (Very good!)',
+          'Fint! (Great!)',
+          'Ja takk, bare bra. Og du? (Yes, thank you. And you?)'
+        ]),
+        <p key={6}>Saying <strong>"Nice to meet you."</strong></p>,
+        renderCheckboxes([
+          'Hyggelig å møte deg.',
+          'Hyggelig å hilse på deg.',
+          'Artig å treffe deg.',
+          'I like måte. (Nice to meet you also.)'
+        ]),
+        <p key={7}>Saying <strong>"Goodbye."</strong></p>,
+        renderCheckboxes([
+          'Ha det bra. (When response, using "Ha det." only)',
+          'Vi sees / høres / møtes.',
+          'På gjensyn.',
+          'Adjø.',
+          'Farvel.'
         ])
+      ]
+    ],
+    [
+      'Conversation II - Common Phrases', [
+        <p key={1}>Asking <strong>name</strong> & responses:</p>,
+        renderCheckboxes([
+          'Hva heter du? (What is your name?)',
+          'Jeg heter Maxwell. (My name is Maxwell.)'
+        ]),
+        <p key={2}>Asking somebody from somewhere & responses:</p>,
+        renderCheckboxes([
+          'Hvor er du fra? (Where are you from?)',
+          'Hvor kommer du fra? (Where do you come from?)',
+          'Jeg er fra Norsk. (I am from Norway.)',
+          'Jeg kommer fra Norsk. (I come from Norway)'
+        ]),
+        <p key={3}>Positive / Negative / Neuter:</p>,
+        renderCheckboxes([
+          'Ja. (Yes)',
+          'Nei. (No)',
+          'Kanskje. (Maybe / Probably)',
+          'Ja, litt. (Yes, a little.)'
+        ]),
+        <p key={4}>Appreciations & Saying <strong>"Your welcome."</strong></p>,
+        renderCheckboxes([
+          'Takk. (Thanks.)',
+          'Tusen takk. (Many thanks.)',
+          'Mange takk. (Many thanks.)',
+          'Takk skal du ha. (Thanks to you.)',
+          'Være så god. (You\'re welcome.)'
+        ]),
+        <p key={5}>Hint: <i>"Takk skal du ha."</i> normally is written as <i>"Du skal ha takk."</i> which means <strong>"You shall have my thanks."</strong>.</p>
       ]
     ],
     [
@@ -175,7 +229,7 @@ Main.defaultProps = {
             ['5', 'fem', '', '']
           ]}
         />,
-        <p key={3}>Counting in Norwegian from 11 ~ 20.</p>,
+        <p key={3}>Counting in Norwegian from 11 ~ 20, most of them have ending of <strong>-en</strong></p>,
         <Table
           key={4}
           caption="Number from 11 ~ 20"
@@ -212,7 +266,7 @@ Main.defaultProps = {
     ],
     [
       'Number II (et tall)', [
-        <p key={1}>Counting the tens in Norwegian.</p>,
+        <p key={1}>Counting the tens in Norwegian, most of them have ending <strong>-ti</strong>.</p>,
         <Table
           key={2}
           caption="Tens of Number in Norwegian"
@@ -225,7 +279,7 @@ Main.defaultProps = {
             ['50', 'femti', '100', 'et/en hundre']
           ]}
         />,
-        <p key={3}>Compound number <strong>combines the tens part and the number 0 ~ 9 part</strong>, for instance, to count from 21 ~ 30:</p>,
+        <p key={3}>Compound number <strong>combines the tens part and the number 0 ~ 9 part</strong> which forms the number ranged from 21 ~ 99, for instance, to count from 21 ~ 30:</p>,
         <Table
           key={4}
           caption="Counting from 21 ~ 30"
@@ -236,6 +290,32 @@ Main.defaultProps = {
             ['23', 'tjuetre', '28', 'tjueåtte'],
             ['24', 'tjuefire', '29', 'tjueni'],
             ['25', 'tjuefem', '30', 'tretti']
+          ]}
+        />,
+        <p key={4}>Counting the hundreds in Norwegian, which is the number from 1 ~ 9 combines with the word <strong>hundre</strong>.</p>,
+        <Table
+          key={5}
+          caption="Hundreds of Number in Norwegian"
+          data={[
+            ['Number', 'Norwegian', 'Number', 'Norwegian'],
+            ['100', 'en / ett hundre', '600', 'seks hundre'],
+            ['200', 'to hundre', '700', 'sju hundre'],
+            ['300', 'tre hundre', '800', 'åtte hundre'],
+            ['400', 'fire hundre', '900', 'ni hundre'],
+            ['500', 'fem hundre', '1000', 'en / ett tusen']
+          ]}
+        />,
+        <p key={6}>Combound number <strong>combines the hundreds with the number ranged in 0 ~ 99</strong> with the word <strong>og</strong> (<i>"and"</i> in Norwegian) which forms the number ranged from 100 ~ 999, for instance:</p>,
+        <Table
+          key={7}
+          caption="Example Compound Number from 1 ~ 1000 in Norwegian"
+          data={[
+            ['Number', 'Norwegian', 'Number', 'Norwegian'],
+            ['252', 'to hundre og femtito', '105', 'hundre og fem'],
+            ['303', 'tre hundre og tre', '670', 'seks hundre og sytti'],
+            ['106', 'hundre og seks', '171', 'hundre og syttien'],
+            ['201', 'to hundre og en', '297', 'to hundre og nittisju'],
+            ['345', 'tre hundre og førtifem', '867', 'åtte hundre og sekstisju']
           ]}
         />
       ]

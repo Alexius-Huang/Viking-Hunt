@@ -39,7 +39,8 @@ class Aside extends Component {
 Aside.defaultProps = {
   content: [
     'Norwegian Alphabets',
-    'Conversation I - Greetings & Common Phrases',
+    'Conversation I - Greetings',
+    'Conversation II - Common Phrases',
     'Personal Pronouns (Pronomen)',
     'Nouns (Substantiv)',
     'Verbs',

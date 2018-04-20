@@ -35,6 +35,12 @@ section.grammer-section > article > p {
   border-radius: 3pt;
   transition: .25s;
 }
+section.grammer-section > article > p::selection,
+section.grammer-section > article > p > strong::selection,
+section.grammer-section > article > p > i::selection {
+  color: #333;
+  background-color: #fff;
+}
 section.grammer-section > article > p:hover {
   background-color: #444;
   transition: .25s;
