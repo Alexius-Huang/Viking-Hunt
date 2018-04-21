@@ -210,6 +210,88 @@ Main.defaultProps = {
       ]
     ],
     [
+      'Vocabulary I - Family (en familie)', [
+        <p key={1}>Younger ages member:</p>,
+        <List key={2} items={[
+          'baby (m.) baby',
+          'barn (n. / pl.) child / children',
+          'sønn (m.) son',
+          'datter (f.) daughter',
+          'bror (m.) brother',
+          'søster (f.) sister',
+          'søsken (n.) siblings',
+          'nevø (m.) nephew',
+          'neise (f.) neice',
+          'kusine (f.) / fetter (m.) cousin',
+          'søskenbarn (n.) cousins',
+          'kjæreste (m.) boyfriend / girlfriend',
+          'barnebarn (n.) grandchild / grandchildren / grandson / granddaughter',
+          'oldebarn (n.) great grandchild ...etc',
+          'tipp oldebarn (n.) great great grandchild ...etc',
+          'tipp tipp oldebarn (n.) great great great grandchild ...etc'
+        ]} />,
+        <p key={3}>Adult member:</p>,
+        <List key={4} items={[
+          'familiemedlem (n.) a family member',
+          'foreldre (pl.) parents',
+          'en far, pappa (m.) father',
+          'en mor, mamma (f.) mother',
+          'ektemann / mann (m.) husband',
+          'kone (f.) wife',
+          'onkel (m.) uncle',
+          'tante (f.) aunt',
+          'enkemann (m.) widower',
+          'enke (f.) widow',
+          'ungkar (m.) bachelor',
+          'peppermø (f.) spinster',
+          // 'en do (toilet)',
+          // 'et kurs (a course)',
+          // 'å hilse (to greet)',
+          // 'å gjøre (to do) / gjør (do)',
+          // 'å kunne (to be able)',
+          // 'å gå (to go)',
+          // 'å jobbe (to work)',
+          // 'å spise (to eat)',
+          // 'å sove (to sleep)',
+          // 'å forstå (to understand)'
+        ]} />,
+        <p key={5}>Older members:</p>,
+        <List key={6} items={[
+          'besteforelder (pl.) grandparents',
+          'bestefar (m.) grandfather',
+          'oldefar (m.) great grandfather',
+          'tippoldefar (m.) great great grandfather',
+          'tipp-tippoldefar (m.) great great great grandfather',
+          'farfar (m.) paternal grandfather',
+          'morfar (m.) maternal grandfather',
+          'bestemor (f.) grandmother',
+          'oldemor (m.) great grandmother',
+          'tippoldemor (m.) great great grandmother',
+          'tipp-tippoldemor (m.) great great great grandmother',
+          'farmor (f.) paternal grandmother',
+          'mormor (f.) maternal grandmother'
+        ]} />,
+        <p key={7}>To denote that a relationship is not of blood, but of <strong>legal adoption</strong>, add <strong>adoptiv-</strong> to the beginning of a relationship word. For example, "barn" means child so "<strong>adoptiv</strong>barn" means "adopted child".</p>,
+        <p key={8}>To denote that a close relationship is not of blood, but of <strong>marriage</strong>, add <strong>ste-</strong> to the beginning of a relationship word. For example, "far" means father so "<strong>ste</strong>far" means "step-father".</p>,
+        <p key={9}>To denote that a <i>more distant relationship is not of blood, but of marriage</i>, add <strong>sviger-</strong> to the beginning of a relationship word. For example, "far" means father so "<strong>sviger</strong>far" means "father-in-law". But there are still exceptions:</p>,
+        <List key={10} items={[
+          'svoger (m.) brother-in-law',
+          'svigerinne (f.) sister-in-law'
+        ]} />,
+        <p key={11}>State of familiy:</p>,
+        renderCheckboxes([
+          <span>Han er <strong>gift</strong>. (He is married.)</span>,
+          <span>Hun er <strong>skilt</strong>. (She is divorced.)</span>,
+          <span>Han er <strong>enkemann</strong>. (He is widowed.)</span>,
+          <span>Hun er <strong>singel.</strong> (She is single.)</span>,
+          <span>Vi er <strong>forlovet.</strong> (We are engaged.)</span>,
+          <span>Jeg er <strong>gravid.</strong> (I am pregnant.)</span>,
+          // 'Dette er dattern min. (This is my daughter.)'
+        ]),
+        <p key={12}>Hint: Information from <a href="http://norwayathome.info/names-for-family-relationships/">norwayathome.info - Names for Family Relationships</a></p>
+      ]
+    ],
+    [
       'Verbs (Presens & Infinitiv)', [
         <p key={1}>Most of the verb in present tense (presens) adds <strong>r</strong> in the end of the word. For instance:</p>,
         <List
@@ -351,6 +433,74 @@ Main.defaultProps = {
       ]
     ],
     [
+      'Vocabulary - Professions (et yrke)', [
+        <p key={1}>Asking people's profession:</p>,
+        renderCheckboxes([
+          <span><strong>Hva er ditt yrke?</strong> (What is your profession?)</span>,
+          'Jeg er norsk lærer. (I am Norwegian teacher.)'
+        ]),
+        <p key={2}>List of professions:</p>,
+        <List
+          key={3}
+          items={[
+            'lærer (m./f.) teacher',
+            'maler (m./f.) painter',
+            'kokk (m.) / kokke (f.) cook',
+            'ingeniør (m./f.) engineer',
+            'mekaniker (m./f.) mechanic',
+            'fabrikkarbeider (m./f.) factory worker',
+            'sveiser (m./f.) welder',
+            'daglig leder (m./f.) director / CEO',
+            'sjåfør (m./f.) driver',
+            'bussjåfør (m./f.) bus driver',
+            'lastebilsjåfør (m./f.) truck driver',
+            'truckfører (m./f.) fork-lift driver',
+            'sykepleier (m./f.) nurse',
+            'lege (m./f.) doctor',
+            'tannlege (m./f.) dentist',
+            'regnskapsfører (m./f.) accountant',
+            'rengjøringsarbeider / renholder (m./f.) cleaner',
+            'elektriker (m./f.) electrician',
+            'prosjektleder (m./f.) project manager',
+            'jurist (m./f.) lawyer',
+            'bonde (m./f.) farmer',
+            'fisker (m./f.) fisher',
+            'oljearbeider (m./f.) oil worker',
+            'postmann (m./f.) postman',
+            'student (m./f.) student',
+            'politi (m./f.) police',
+            'prest (m./f.) priest',
+            'frisør (m./f.) hair dresser',
+            'servitør (m./f.) waiter',
+            'skredder (m./f.) tailor',
+            'snekker (m./f.) carpenter'
+          ]}
+        />,
+        <p key={4}>Hint: "Truck" in Norwegian is fork-lift instead of "truck"</p>,
+        <p key={5}>List of working places:</p>,
+        <List
+          key={6}
+          items={[
+            'utdanning (m.) education',
+            'søknad	(m.) application',
+            'arbeidsplass (m.) workplace',
+            'kontor (n.) office',
+            'sykehus (n.) hospital',
+            'sykehjem (n.) nursing home',
+            'politistasjon (m.) police station',
+            'frisørsalong (m.) hair dressing salon',
+            'hotell (n.) hotel',
+            'restaurant (m.) restaurant',
+            'gård (n.) farm',
+            'verksted (n.) workshop',
+            'fabrikk (m.) factory',
+            'systue (f.) sewing place',
+            'kirke (f.) church'
+          ]}
+        />
+      ]
+    ],
+    [
       'Numbers I', [
         <p key={1}>Counting numbers (<i>et tall</i>) in Norwegian from 0 ~ 10.</p>,
         <Table
@@ -379,88 +529,6 @@ Main.defaultProps = {
             ['15', 'femten', '20', 'tjue / tyve']
           ]}
         />
-      ]
-    ],
-    [
-      'Vocabulary I - Family (en familie)', [
-        <p key={1}>Younger ages member:</p>,
-        <List key={2} items={[
-          'baby (m.) baby',
-          'barn (n. / pl.) child / children',
-          'sønn (m.) son',
-          'datter (f.) daughter',
-          'bror (m.) brother',
-          'søster (f.) sister',
-          'søsken (n.) siblings',
-          'nevø (m.) nephew',
-          'neise (f.) neice',
-          'kusine (f.) / fetter (m.) cousin',
-          'søskenbarn (n.) cousins',
-          'kjæreste (m.) boyfriend / girlfriend',
-          'barnebarn (n.) grandchild / grandchildren / grandson / granddaughter',
-          'oldebarn (n.) great grandchild ...etc',
-          'tipp oldebarn (n.) great great grandchild ...etc',
-          'tipp tipp oldebarn (n.) great great great grandchild ...etc'
-        ]} />,
-        <p key={3}>Adult member:</p>,
-        <List key={4} items={[
-          'familiemedlem (n.) a family member',
-          'foreldre (pl.) parents',
-          'en far, pappa (m.) father',
-          'en mor, mamma (f.) mother',
-          'ektemann / mann (m.) husband',
-          'kone (f.) wife',
-          'onkel (m.) uncle',
-          'tante (f.) aunt',
-          'enkemann (m.) widower',
-          'enke (f.) widow',
-          'ungkar (m.) bachelor',
-          'peppermø (f.) spinster',
-          // 'en do (toilet)',
-          // 'et kurs (a course)',
-          // 'å hilse (to greet)',
-          // 'å gjøre (to do) / gjør (do)',
-          // 'å kunne (to be able)',
-          // 'å gå (to go)',
-          // 'å jobbe (to work)',
-          // 'å spise (to eat)',
-          // 'å sove (to sleep)',
-          // 'å forstå (to understand)'
-        ]} />,
-        <p key={5}>Older members:</p>,
-        <List key={6} items={[
-          'besteforelder (pl.) grandparents',
-          'bestefar (m.) grandfather',
-          'oldefar (m.) great grandfather',
-          'tippoldefar (m.) great great grandfather',
-          'tipp-tippoldefar (m.) great great great grandfather',
-          'farfar (m.) paternal grandfather',
-          'morfar (m.) maternal grandfather',
-          'bestemor (f.) grandmother',
-          'oldemor (m.) great grandmother',
-          'tippoldemor (m.) great great grandmother',
-          'tipp-tippoldemor (m.) great great great grandmother',
-          'farmor (f.) paternal grandmother',
-          'mormor (f.) maternal grandmother'
-        ]} />,
-        <p key={7}>To denote that a relationship is not of blood, but of <strong>legal adoption</strong>, add <strong>adoptiv-</strong> to the beginning of a relationship word. For example, "barn" means child so "<strong>adoptiv</strong>barn" means "adopted child".</p>,
-        <p key={8}>To denote that a close relationship is not of blood, but of <strong>marriage</strong>, add <strong>ste-</strong> to the beginning of a relationship word. For example, "far" means father so "<strong>ste</strong>far" means "step-father".</p>,
-        <p key={9}>To denote that a <i>more distant relationship is not of blood, but of marriage</i>, add <strong>sviger-</strong> to the beginning of a relationship word. For example, "far" means father so "<strong>sviger</strong>far" means "father-in-law". But there are still exceptions:</p>,
-        <List key={10} items={[
-          'svoger (m.) brother-in-law',
-          'svigerinne (f.) sister-in-law'
-        ]} />,
-        <p key={11}>State of familiy:</p>,
-        renderCheckboxes([
-          <span>Han er <strong>gift</strong>. (He is married.)</span>,
-          <span>Hun er <strong>skilt</strong>. (She is divorced.)</span>,
-          <span>Han er <strong>enkemann</strong>. (He is widowed.)</span>,
-          <span>Hun er <strong>singel.</strong> (She is single.)</span>,
-          <span>Vi er <strong>forlovet.</strong> (We are engaged.)</span>,
-          <span>Jeg er <strong>gravid.</strong> (I am pregnant.)</span>,
-          // 'Dette er dattern min. (This is my daughter.)'
-        ]),
-        <p key={12}>Hint: Information from <a href="http://norwayathome.info/names-for-family-relationships/">norwayathome.info - Names for Family Relationships</a></p>
       ]
     ],
     [
@@ -495,11 +563,6 @@ Main.defaultProps = {
             <span>Jeg <strong>bør</strong> hjelpe.</span>
           ]}
         />
-      ]
-    ],
-    [
-      'Conversation V - Professions', [
-        <p key={1}>Conversation III - Professions</p>
       ]
     ],
     [
