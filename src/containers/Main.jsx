@@ -121,6 +121,7 @@ Main.defaultProps = {
           'Takk. (Thanks.)',
           'Tusen takk. (Many thanks.)',
           'Mange takk. (Many thanks.)',
+          'Ja takk, gjerne det. (Yes, thank you! / Pleasure. / Gladly.)',
           'Takk skal du ha. (Thanks to you.)',
           'Være så god. (You\'re welcome. / No problem.)'
         ]),
@@ -246,12 +247,67 @@ Main.defaultProps = {
     ],
     [
       'Forming Sentences', [
-        <p key={1}>Forming Sentences</p>
+        <p key={1}>Basic setence structure usually starts with a <strong>subject (subjekt)</strong>.</p>,
+        <p key={2}>The second place must comes with a <strong>predicate (predikat) which describes an action</strong>.</p>,
+        <p key={3}>Lastly, some sentences can have an <strong>object (objekt)</strong>. For instance:</p>,
+        <List
+          key={4} stateless
+          items={[
+            <span>Jeg <strong>står</strong> opp veldig tidlig. (I wake up early.)</span>,
+            <span>Jeg <strong>bor</strong> i Oslo. (I live in Oslo.)</span>,
+            <span>Nå <strong>bor</strong> jeg i Oslo. (I live in Oslo now.)</span>,
+            <span>Han <strong>leser</strong> bøker. (He reads books.)</span>,
+            <span>Nå <strong>leser</strong> han bøker. (Now he is reading books.)</span>
+          ]}
+        />,
+        <p key={5}>Hint: From the examples above, you can always know that <strong>the predicate comes at the 2nd place</strong> while some sentences might have different order in subject or object.</p>
       ]
     ],
     [
       'Asking Questions', [
-        <p key={1}>Asking Questions</p>
+        <p key={1}>There are two ways of asking questions <strong>(et spørsmål)</strong> in Norwegian: the <strong>close questions</strong> or the <strong>open questions</strong>.</p>,
+        <p key={2}>The close questions, so-called the <strong>yes/no questions</strong>, have no interrogative words, simply <strong>place the predicate to the first place</strong> while didn't change the order of the other part. For instance:</p>,
+        <List
+          key={3} stateless
+          items={[
+            <span><strong>Bor</strong> du i Oslo? (Do you live in Oslo?)</span>,
+            <span><strong>Kommer</strong> han fra Bergan? (Is he come from Oslo?)</span>
+          ]}
+        />,
+        <p key={4}>Another type of questions are close questions, in Norwegian it is also known as the <strong>HV-questions</strong>. Usually begins with <strong>interrogative words</strong> which starts with <strong>hv-</strong>, after which a predicate or the first verb of the predicate comes. The HV-interrogative words are listed below:</p>,
+        <List
+          key={5}
+          items={[
+            <span>Hva? {icon('long-arrow-right')} What?</span>,
+            <span>Hvem? {icon('long-arrow-right')} Who?</span>,
+            <span>Hvor? {icon('long-arrow-right')} Where?</span>,
+            <span>Hvorfor? {icon('long-arrow-right')} Why?</span>,
+            <span>Hvordan? {icon('long-arrow-right')} How?</span>,
+            <span>Når? {icon('long-arrow-right')} When?</span>,
+            <span>Hvilk<strong>en</strong> (Masculine + Feminine) / Hvilk<strong>et</strong> (Neuter) / Hvilk<strong>e</strong> (Plural) {icon('long-arrow-right')} Which?</span>
+          ]}
+        />,
+        <p key={6}>Some useful question starter:</p>,
+        <List
+          key={7}
+          items={[
+            <span>Hvor mange? {icon('long-arrow-right')} How many? (Countable nouns)</span>,
+            <span>Hvor mye? {icon('long-arrow-right')} How much? (Uncountable nouns)</span>,
+            <span>Hvor gammel? {icon('long-arrow-right')} How old?</span>,
+            <span>Hvor lang? / Hvor lang tid? / Hvor lenge? {icon('long-arrow-right')} How long? / How much time?</span>,
+            <span>Hvor ofte? {icon('long-arrow-right')} How often?</span>
+          ]}
+        />,
+        <p key={8}>For example:</p>,
+        <List
+          key={9} stateless
+          items={[
+            <span><strong>Hvor gammel</strong> er du? (How old are you?)</span>,
+            <span><strong>Hva</strong> skal du kjøpe? (What will you buy?)</span>,
+            <span><strong>Hva</strong> er det? (What is it?)</span>,
+            <span><strong>Hvem</strong> er det? (Who is it?)</span>
+          ]}
+        />
       ]
     ],
     [

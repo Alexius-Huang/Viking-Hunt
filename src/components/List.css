@@ -9,10 +9,13 @@ ul.List > li {
   line-height: 24pt;
   transition: .25s;
   user-select: none;
+}
+
+ul.List > li:not(.stateless) {
   cursor: pointer;
 }
 
-ul.List > li:before {
+ul.List > li:not(.stateless):before {
   content: '\f096';
   font-family: 'FontAwesome';
   font-size: 10pt;
@@ -23,10 +26,21 @@ ul.List > li:before {
   margin: 0 10pt;
 }
 
-ul.List > li.active {
+ul.List > li.stateless:before {
+  content: '';
+  display: inline-block;
+  width: 5pt;
+  height: 5pt;
+  line-height: 24pt;
+  margin: 0 10pt;
+  border: 1pt solid #777;
+  transform: rotate(45deg);
+}
+
+ul.List > li:not(.stateless).active {
   color: #66BB6A;
 }
-ul.List > li.active:before {
+ul.List > li:not(.stateless).active:before {
   content: '\f046';
   color: #66BB6A;
 }
