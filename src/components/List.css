@@ -8,6 +8,13 @@ ul.List > li {
   line-height: 24pt;
   transition: .25s;
   user-select: none;
+  transition: .25s;
+  color: #bbb;
+}
+
+ul.List > li:hover {
+  color: #eee;
+  transition: .25s;
 }
 
 ul.List > li:not(.stateless) {

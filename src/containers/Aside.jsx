@@ -17,7 +17,7 @@ class Aside extends Component {
   render() {
     const { content } = this.props;
     return (
-      <aside className="Aside">
+      <aside className="Aside" ref={(c) => { this.wrapper = c; }}>
         {
           content.map((item, i) => (
             <a

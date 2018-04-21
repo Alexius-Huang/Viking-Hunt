@@ -1,7 +1,10 @@
 aside {
   padding: 20px;
-  position: fixed;
+  position: sticky;
   left: 0pt;
+  top: 0pt;
+  height: 100vh;
+  overflow-y: auto;
   display: inline-block;
   width: 200pt;
   height: auto;

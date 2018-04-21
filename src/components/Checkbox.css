@@ -10,6 +10,15 @@ label.checkbox-input {
   margin-right: 15pt;
   margin-bottom: 10pt;
   cursor: pointer;
+  transition: .25s;
+}
+label.checkbox-input:hover > span.checkbox-display {
+  background-color: #444;
+  transition: .25s;
+}
+label.checkbox-input:hover > span.checkbox-content {
+  color: #ddd;
+  transition: .25s;
 }
 label.checkbox-input > input[type="checkbox"] {
   display: none;
@@ -18,7 +27,6 @@ label.checkbox-input > span.checkbox-display {
   display: inline-block;
   width: 30pt;
   height: 30pt;
-  /* background-color: #555; */
   transition: .25s;
   border-radius: 50%;
   position: relative;
