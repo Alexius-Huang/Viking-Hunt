@@ -465,7 +465,36 @@ Main.defaultProps = {
     ],
     [
       'Modal Verb', [
-        <p key={1}>Modal Verb</p>
+        <p key={1}>Modal verb (modale verb), in Norwegian is known as <strong>hjelpeverb</strong>, subsidiary verb which helps describe the state or the action of the successive verb. The modal verbs in Norwegian are listed below:</p>,
+        <List
+          key={2}
+          items={[
+            <span>å <strong>kunne</strong> (to be able / can) {icon('long-arrow-right')} <strong>kan</strong> (can)</span>,
+            <span>å <strong>ville</strong> (to want) {icon('long-arrow-right')} <strong>vil</strong></span>,
+            <span>å <strong>skulle</strong> (will) {icon('long-arrow-right')} <strong>skal</strong></span>,
+            <span>å <strong>måtte</strong> (must / have to) {icon('long-arrow-right')} <strong>må</strong></span>,
+            <span>å <strong>burde</strong> (should) {icon('long-arrow-right')} <strong>bør</strong></span>
+          ]}
+        />,
+        <p key={3}>Hint: <strong>"å skulle"</strong> is a kind of subsidiary verb in making the <strong>future tense</strong> in Norwegian, like the word "will" in English</p>,
+        <p key={4}>Making sentence with modal verbs in Norwegian:</p>,
+        <List
+          key={5} stateless
+          items={[
+            <span>Jeg <strong>kan</strong> snakke norsk.</span>,
+            <span><strong>Kan</strong> du hjelpe oss med modale verb?</span>,
+            <span>Han <strong>kan</strong> male.</span>,
+            <span>Hun <strong>kan</strong> hjelpe.</span>,
+            <span>Jeg <strong>vil</strong> se på TV.</span>,
+            <span>Jeg <strong>skal</strong> male.</span>,
+            <span>Du <strong>skal</strong> gå.</span>,
+            <span>Jeg <strong>skal</strong> hjelpe.</span>,
+            <span>Jeg <strong>må</strong> tenke litt. (I have to think a little.)</span>,
+            <span>Vel, vi <strong>må</strong> fortsette videre. (Well, we must continue further.)</span>,
+            <span>Jeg <strong>bør</strong> snakke norsk.</span>,
+            <span>Jeg <strong>bør</strong> hjelpe.</span>
+          ]}
+        />
       ]
     ],
     [
