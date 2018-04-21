@@ -567,7 +567,52 @@ Main.defaultProps = {
     ],
     [
       'Conjunctions (Konjuksjoner)', [
-        <p key={1}>Conjunctions (Konjuksjoner)</p>
+        <p key={1}>Conjunctions are <strong>words that link other words, phrases, or clauses together</strong>. List of the conjunctions in Norwegian:</p>,
+        <List
+          key={2}
+          items={[
+            <span><strong>og</strong> (and)</span>,
+            <span><strong>at</strong> (that, in order to)</span>,
+            <span><strong>men</strong> (but)</span>,
+            <span><strong>eller</strong> (or)</span>,
+            <span><strong>for</strong> (because)</span>,
+            <span><strong>fordi</strong> (for / because)</span>,
+            <span><strong>hvis</strong> (if)</span>,
+            <span><strong>da</strong> (whereas)</span>,
+            <span><strong>som</strong> (which)</span>,
+            <span><strong>silk at</strong>, <strong>så at</strong> (such that)</span>,
+            <span><strong>så lenge</strong> (as long as)</span>,
+            <span><strong>siden</strong> (since then)</span>,
+            <span><strong>om</strong> (or, if)</span>,
+            <span><strong>enda</strong> / <strong>selv om</strong> (though / although)</span>,
+            <span><strong>når</strong> (as, while)</span>,
+            <span><strong>etter at</strong> (after)</span>,
+            <span><strong>før</strong> (before)</span>,
+            <span><strong>mens</strong> (while)</span>
+          ]}
+        />,
+        <p key={3}>For instance:</p>,
+        <List
+          key={4} stateless
+          items={[
+            <span>De danset <strong>og</strong> de sang. (They danced <strong>and</strong> they sang.)</span>,
+            <span>De danset ikke <strong>men</strong> de sang. (They didn't dance <strong>but</strong> they sang.)</span>,
+            <span>De ville ikke danse <strong>for</strong> de ville synge. (They wouldn't dangce because they would sing.)</span>,
+            <span>Vil du danse <strong>eller</strong> vil du synge? (Will you dance or will you sing?)</span>,
+            <span>Hun sa <strong>at</strong> hun skulle komme. (She said <strong>that</strong> she would come.)</span>,
+            <span>Hun spurte <strong>om</strong> hun skulle komme. (She asked <strong>if</strong> she would come.)</span>,
+            <span>Lunsj hadde begynt <strong>da</strong> han kom. (Lunch has began <strong>when</strong> he came.)</span>,
+            <span>Han vet ikke <strong>når</strong> hun kommer. (He doesn't know <strong>when</strong> she will come.)</span>,
+            <span>De spiste <strong>etter at</strong> de hadde danset. (They ate <strong>after</strong> they had dance.)</span>,
+            <span>Du kan komme <strong>hvis</strong> du vil. (You can come <strong>if</strong> you come.)</span>,
+            <span><strong>Selv om</strong> han var syk, ville han på arbeid. (<strong>Although</strong> he was sick, he would go to work.)</span>,
+            <span>Du kan spise <strong>mens</strong> vi snakker. (You can eat <strong>while</strong> we talk.)</span>,
+            <span>Du må vaske opp <strong>før</strong> du kan spise. (You must wash up <strong>before</strong> you can eat.)</span>,
+            <span>Han ventet <strong>siden</strong> det regnet. (He waited <strong>since</strong> it rained.)</span>,
+            <span>Du kan ikke komme <strong>fordi</strong> du er sent. (You cannot come <strong>because</strong> you can late.)</span>,
+            <span>Du kan vente <strong>så lenge</strong> du vil. (You can wait <strong>as long as</strong> you want.)</span>,
+          ]}
+        />
       ]
     ],
     [
@@ -598,9 +643,9 @@ Main.defaultProps = {
             ['25', 'tjuefem', '30', 'tretti']
           ]}
         />,
-        <p key={4}>Counting the hundreds in Norwegian, which is the number from 1 ~ 9 combines with the word <strong>hundre</strong>.</p>,
+        <p key={5}>Counting the hundreds in Norwegian, which is the number from 1 ~ 9 combines with the word <strong>hundre</strong>.</p>,
         <Table
-          key={5}
+          key={6}
           caption="Hundreds of Number in Norwegian"
           data={[
             ['Number', 'Norwegian', 'Number', 'Norwegian'],
@@ -611,9 +656,9 @@ Main.defaultProps = {
             ['500', 'fem hundre', '1000', 'en / ett tusen']
           ]}
         />,
-        <p key={6}>Combound number <strong>combines the hundreds with the number ranged in 0 ~ 99</strong> with the word <strong>og</strong> (<i>"and"</i> in Norwegian) which forms the number ranged from 100 ~ 999, for instance:</p>,
+        <p key={7}>Combound number <strong>combines the hundreds with the number ranged in 0 ~ 99</strong> with the word <strong>og</strong> (<i>"and"</i> in Norwegian) which forms the number ranged from 100 ~ 999, for instance:</p>,
         <Table
-          key={7}
+          key={8}
           caption="Example Compound Number from 1 ~ 1000 in Norwegian"
           data={[
             ['Number', 'Norwegian', 'Number', 'Norwegian'],

@@ -5,7 +5,6 @@ ul.List {
 ul.List > li {
   list-style-type: none;
   position: relative;
-  height: 24pt;
   line-height: 24pt;
   transition: .25s;
   user-select: none;
