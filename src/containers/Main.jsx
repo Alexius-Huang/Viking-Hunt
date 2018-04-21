@@ -328,7 +328,7 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Forming Sentences', [
+      'Forming Sentences I - Basics', [
         <p key={1}>Basic setence structure usually starts with a <strong>subject (subjekt)</strong>.</p>,
         <p key={2}>The second place must comes with a <strong>predicate (predikat) which describes an action</strong>.</p>,
         <p key={3}>Lastly, some sentences can have an <strong>object (objekt)</strong>. For instance:</p>,
@@ -346,7 +346,7 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Asking Questions', [
+      'Forming Sentences II - Asking Questions', [
         <p key={1}>There are two ways of asking questions <strong>(et spørsmål)</strong> in Norwegian: the <strong>close questions</strong> or the <strong>open questions</strong>.</p>,
         <p key={2}>The close questions, so-called the <strong>yes/no questions</strong>, have no interrogative words, simply <strong>place the predicate to the first place</strong> while didn't change the order of the other part. For instance:</p>,
         <List
@@ -678,7 +678,7 @@ Main.defaultProps = {
     ],
     [
       'Nouns II - Plural', [
-        <p key={1}>Plural</p>
+        <p key={1}>Plurals of nouns</p>
       ]
     ],
     [
@@ -689,6 +689,21 @@ Main.defaultProps = {
     [
       'Sentence Circumstance', [
         <p key={1}>Sentence Circumstance (setningsadverbial)</p>
+      ]
+    ],
+    [
+      'Adjective I - Rules', [
+        <p key={1}>Adjective I - Rules</p>
+      ]
+    ],
+    [
+      'Adjective II - Exceptions', [
+        <p key={1}>Adjective II - Exceptions</p>
+      ]
+    ],
+    [
+      'Forming Sentences III - "det" Sentences', [
+        <p key={1}>Forming Sentences III - "det" Sentences</p>
       ]
     ]
   ]

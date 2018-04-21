@@ -46,8 +46,8 @@ Aside.defaultProps = {
     'Nouns I - Substantiv',
     'Vocabulary I - Family (en familie)',
     'Verbs (Presens & Infinitiv)',
-    'Forming Sentences',
-    'Asking Questions',
+    'Forming Sentences I - Basics',
+    'Forming Sentences II - Asking Questions',
     'Conversation IV - Languages',
     'Vocabulary II - Professions (et yrke)',
     'Numbers I',
@@ -57,7 +57,10 @@ Aside.defaultProps = {
     'Vocabulary II',
     'Nouns II - Plurals',
     'Negative Sentences',
-    'Sentence Circumstance'
+    'Sentence Circumstance',
+    'Adjective I - Rules',
+    'Adjective II - Exceptions',
+    'Forming Sentences III - "det" Sentences'
   ]
 }
 
