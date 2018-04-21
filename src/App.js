@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <section className="main-page">
           <div className="main-page-wrapper">
-            <h1>Learn Norwegian</h1>
+            <h1>Viking Hunt</h1>
             <h2>Hei alle sammen! La oss lære norsk.</h2>
             <h3>Hi all! Let's learn Norwegian.</h3>
           </div>
