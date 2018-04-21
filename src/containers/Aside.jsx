@@ -18,19 +18,23 @@ class Aside extends Component {
     const { content } = this.props;
     return (
       <aside className="Aside" ref={(c) => { this.wrapper = c; }}>
-        {
-          content.map((item, i) => (
-            <a
-              key={i}
-              onClick={(e) => {
-                e.preventDefault();
-                this.handleClick(`#section-${i + 1}`)
-              }}
-            >
-              {item}
-            </a>
-          ))
-        }
+        <h5>Norwegian Learning Route</h5>
+        
+        <div className="aside-content">
+          {
+            content.map((item, i) => (
+              <a
+                key={i}
+                onClick={(e) => {
+                  e.preventDefault();
+                  this.handleClick(`#section-${i + 1}`)
+                }}
+              >
+                {item}
+              </a>
+            ))
+          }
+        </div>
       </aside>
     );
   }

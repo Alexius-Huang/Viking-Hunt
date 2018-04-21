@@ -15,10 +15,54 @@ aside {
   counter-reset: anchor -1;
 }
 
-aside > a {
+aside:before,
+aside:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border: 3pt double #aaa;
+  transform: rotate(45deg);
+}
+
+aside:before {
+  width: 10pt;
+  height: 10pt;
+  right: 3pt;
+  bottom: 7pt;
+}
+
+aside:after {
+  width: 15pt;
+  height: 15pt;
+  right: 12pt;
+  bottom: 5pt;
+}
+
+aside > h5 {
+  text-align: center;
+  font-size: 14pt;
+  height: 50pt;
+  line-height: 50pt;
+  margin: 0;
+  font-weight: 100;
+  position: relative;
+  box-sizing: border-box;
+  pointer-events: none;
+  background-color: #444;
+}
+
+aside > div.aside-content {
+  padding-top: 5pt;
+  height: calc(100vh - 90pt);
+  overflow-y: auto;
+  box-sizing: border-box;
+  border: 2pt solid #444;
+}
+
+aside > div.aside-content > a {
   display: block;
   transition: .25s;
-  padding: 5pt 10pt 5pt 20pt;
+  padding: 5pt 10pt 5pt 30pt;
   font-size: 10pt;
   cursor: pointer;
   color: #ddd;
@@ -27,18 +71,20 @@ aside > a {
   letter-spacing: .5pt;
   line-height: 15pt;
 }
-aside > a:before {
+aside > div.aside-content > a:before {
   position: absolute;
   counter-increment: anchor;
   content: counter(anchor);
   display: inline-block;
-  left: -5pt;
+  left: 0pt;
   width: 20pt;
   text-align: right;
-  /* top: 0; */
+  padding-right: 3pt;
+  background-color: #444;
+  border-right: 2pt solid #666;
 }
 
-aside > a:hover {
+aside > div.aside-content > a:hover {
   background-color: #444;
   transition: .25s;
 }

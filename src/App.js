@@ -17,13 +17,25 @@ class App extends Component {
           <div className="main-page-navlinks">
             <h4>Created by Maxwell Alexius</h4>
             <div className="navlinks">
-              <a href="https://www.linkedin.com/in/huang-alexius-a95258a4/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/huang-alexius-a95258a4/"
+              >
                 <span className="fa fa-linkedin-square" />
               </a>
-              <a href="https://github.com/Maxwell-Alexius">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Maxwell-Alexius"
+              >
                 <span className="fa fa-github" />
               </a>
-              <a href="https://medium.com/@maximilianhuang">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://medium.com/@maximilianhuang"
+              >
                 <span className="fa fa-medium" />
               </a>
             </div>
