@@ -312,7 +312,7 @@ Main.defaultProps = {
     ],
     [
       'Conversation IV - Languages', [
-        <p key={1}>Asking someone who able to speak particular language:</p>,
+        <p key={1}>Asking someone who able to speak particular language (et språk):</p>,
         renderCheckboxes([
           'Kan du tysk? (Can you speak German?)',
           'Snakke du fransk? (Can you speak French?)'
@@ -382,8 +382,85 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Vocabulary I', [
-        <p key={1}>Vocabulary I</p>
+      'Vocabulary I - Family (en familie)', [
+        <p key={1}>Younger ages member:</p>,
+        <List key={2} items={[
+          'baby (m.) baby',
+          'barn (n. / pl.) child / children',
+          'sønn (m.) son',
+          'datter (f.) daughter',
+          'bror (m.) brother',
+          'søster (f.) sister',
+          'søsken (n.) siblings',
+          'nevø (m.) nephew',
+          'neise (f.) neice',
+          'kusine (f.) / fetter (m.) cousin',
+          'søskenbarn (n.) cousins',
+          'kjæreste (m.) boyfriend / girlfriend',
+          'barnebarn (n.) grandchild / grandchildren / grandson / granddaughter',
+          'oldebarn (n.) great grandchild ...etc',
+          'tipp oldebarn (n.) great great grandchild ...etc',
+          'tipp tipp oldebarn (n.) great great great grandchild ...etc'
+        ]} />,
+        <p key={3}>Adult member:</p>,
+        <List key={4} items={[
+          'familiemedlem (n.) a family member',
+          'foreldre (pl.) parents',
+          'en far, pappa (m.) father',
+          'en mor, mamma (f.) mother',
+          'ektemann / mann (m.) husband',
+          'kone (f.) wife',
+          'onkel (m.) uncle',
+          'tante (f.) aunt',
+          'enkemann (m.) widower',
+          'enke (f.) widow',
+          'ungkar (m.) bachelor',
+          'peppermø (f.) spinster',
+          // 'en do (toilet)',
+          // 'et kurs (a course)',
+          // 'å hilse (to greet)',
+          // 'å gjøre (to do) / gjør (do)',
+          // 'å kunne (to be able)',
+          // 'å gå (to go)',
+          // 'å jobbe (to work)',
+          // 'å spise (to eat)',
+          // 'å sove (to sleep)',
+          // 'å forstå (to understand)'
+        ]} />,
+        <p key={5}>Older members:</p>,
+        <List key={6} items={[
+          'besteforelder (pl.) grandparents',
+          'bestefar (m.) grandfather',
+          'oldefar (m.) great grandfather',
+          'tippoldefar (m.) great great grandfather',
+          'tipp-tippoldefar (m.) great great great grandfather',
+          'farfar (m.) paternal grandfather',
+          'morfar (m.) maternal grandfather',
+          'bestemor (f.) grandmother',
+          'oldemor (m.) great grandmother',
+          'tippoldemor (m.) great great grandmother',
+          'tipp-tippoldemor (m.) great great great grandmother',
+          'farmor (f.) paternal grandmother',
+          'mormor (f.) maternal grandmother'
+        ]} />,
+        <p key={7}>To denote that a relationship is not of blood, but of <strong>legal adoption</strong>, add <strong>adoptiv-</strong> to the beginning of a relationship word. For example, "barn" means child so "<strong>adoptiv</strong>barn" means "adopted child".</p>,
+        <p key={8}>To denote that a close relationship is not of blood, but of <strong>marriage</strong>, add <strong>ste-</strong> to the beginning of a relationship word. For example, "far" means father so "<strong>ste</strong>far" means "step-father".</p>,
+        <p key={9}>To denote that a <i>more distant relationship is not of blood, but of marriage</i>, add <strong>sviger-</strong> to the beginning of a relationship word. For example, "far" means father so "<strong>sviger</strong>far" means "father-in-law". But there are still exceptions:</p>,
+        <List key={10} items={[
+          'svoger (m.) brother-in-law',
+          'svigerinne (f.) sister-in-law'
+        ]} />,
+        <p key={11}>State of familiy:</p>,
+        renderCheckboxes([
+          <span>Han er <strong>gift</strong>. (He is married.)</span>,
+          <span>Hun er <strong>skilt</strong>. (She is divorced.)</span>,
+          <span>Han er <strong>enkemann</strong>. (He is widowed.)</span>,
+          <span>Hun er <strong>singel.</strong> (She is single.)</span>,
+          <span>Vi er <strong>forlovet.</strong> (We are engaged.)</span>,
+          <span>Jeg er <strong>gravid.</strong> (I am pregnant.)</span>,
+          // 'Dette er dattern min. (This is my daughter.)'
+        ]),
+        <p key={12}>Hint: Information from <a href="http://norwayathome.info/names-for-family-relationships/">norwayathome.info - Names for Family Relationships</a></p>
       ]
     ],
     [

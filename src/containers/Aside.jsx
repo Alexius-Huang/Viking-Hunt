@@ -49,7 +49,7 @@ Aside.defaultProps = {
     'Asking Questions',
     'Conversation IV - Languages',
     'Numbers I',
-    'Vocabulary I',
+    'Vocabulary I - Family (en familie)',
     'Modal Verb',
     'Conversation V - Professions',
     'Conjunctions (Konjuksjoner)',
