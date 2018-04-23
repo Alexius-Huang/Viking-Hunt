@@ -208,3 +208,97 @@ section.grammer-section.completed > div.label-header > h2.caption > button.compl
   background-color: #66BB6A;
   color: #ddd;
 }
+
+@media screen and (max-width: 768px) {
+  section.grammer-section {
+    width: 100vw;
+  }
+
+  section.grammer-section + section.grammer-section {
+  }
+
+  section.grammer-section > article {
+    padding-left: 0;
+  }
+  section.grammer-section > article:before {
+    display: none;
+  }
+  section.grammer-section > article > p {
+    width: 100vw;
+    padding: 0 20pt;
+    font-size: 10pt;
+  }
+  section.grammer-section > article > p:hover {
+    background-color: #333;
+  }
+  section.grammer-section > article > p + :not(p) {
+    margin-top: 15pt;
+  }
+
+  section.grammer-section.hide > article {
+  }
+  section.grammer-section.hide + section.grammer-section {
+  }
+
+  div.label-header {
+    padding: 10pt 20pt;
+  }
+
+  div.label-header > span.label-number {
+    width: 20pt;
+    height: 20pt;
+  }
+  div.label-header:hover > span.label-number {
+    background-color: #333;
+    color: #ddd;
+    border-color: #aaa;
+  }
+
+  div.label-header > span.label-number:before {
+    width: 20pt;
+    height: 20pt;
+    font-size: 12pt;
+    line-height: 20pt;
+  }
+
+  div.label-header > h2.caption {
+    font-size: 12pt;
+    line-height: 20pt;
+    display: inline-block;
+    width: calc(100% - 50pt);
+  }
+
+  div.label-header > h2.caption:before {
+    display: none;
+  }
+
+  div.label-header > h2.caption > button.complete-btn {
+    /* Find alternative way */
+    display: none;
+  }
+  div.label-header > h2.caption > button.complete-btn:hover {
+  }
+  div.label-header > h2.caption > button.complete-btn:before,
+  div.label-header > h2.caption > button.complete-btn:after {
+  }
+  div.label-header > h2.caption > button.complete-btn:hover:before,
+  div.label-header > h2.caption > button.complete-btn:hover:after {
+  }
+
+  div.label-header > h2.caption > button.complete-btn:before {
+  }
+  div.label-header > h2.caption > button.complete-btn:after {
+  }
+  div.label-header:hover > h2.caption > button.complete-btn {
+  }
+
+  section.grammer-section.completed > div.label-header > span.label-number,
+  section.grammer-section.completed > div.label-header:hover > span.label-number {
+  }
+
+  section.grammer-section.completed > div.label-header > h2.caption {
+  }
+
+  section.grammer-section.completed > div.label-header > h2.caption > button.complete-btn {
+  }  
+}

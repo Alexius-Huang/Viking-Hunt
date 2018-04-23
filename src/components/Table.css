@@ -12,7 +12,7 @@ div.Table > div.TableCaption {
 
 div.Table > div.TableWrapper {
   display: inline-block;
-  max-width: 700pt;
+  max-width: 600pt;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -23,6 +23,7 @@ div.Table > div.TableWrapper {
 
 div.Table > div.TableWrapper > div.TableRow {
   transition: .25s;
+  overflow-x: auto;
 }
 div.Table > div.TableWrapper > div.TableRow:nth-child(2n) {
   background-color: #444;
@@ -54,4 +55,44 @@ div.Table > div.TableWrapper > div.TableRow > div.TableHeader {
 div.Table > div.TableWrapper > div.TableRow > div.TableCell {
   height: 30pt;
   line-height: 30pt;
+}
+
+@media screen and (max-width: 768px) {
+  div.Table {
+    width: 100vw;
+  }
+
+  div.Table > div.TableCaption {
+  }
+
+  div.Table > div.TableWrapper {
+    width: calc(100% - 20pt);
+    border: 1pt solid #777;
+  }
+
+  div.Table > div.TableWrapper > div.TableRow {
+    width: auto;
+    overflow-x: auto;
+  }
+  div.Table > div.TableWrapper > div.TableRow:hover:nth-child(2n) {
+    background-color: #444;
+  }
+  div.Table > div.TableWrapper > div.TableRow:hover {
+    background-color: #333;
+  }
+  div.Table > div.TableWrapper > div.TableRow:first-child {
+  }
+
+  div.Table > div.TableWrapper > div.TableRow > div.TableHeader,
+  div.Table > div.TableWrapper > div.TableRow > div.TableCell {
+    font-size: 8pt;
+    width: 40%;
+    display: inline-block;
+  }
+
+  div.Table > div.TableWrapper > div.TableRow > div.TableHeader {
+  }
+
+  div.Table > div.TableWrapper > div.TableRow > div.TableCell {
+  }
 }

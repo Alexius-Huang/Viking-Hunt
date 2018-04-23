@@ -6,3 +6,8 @@ main {
   text-align: left;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10pt 0 0 0;
+  }
+}

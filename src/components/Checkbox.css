@@ -30,7 +30,7 @@ label.checkbox-input > span.checkbox-display {
   transition: .25s;
   border-radius: 50%;
   position: relative;
-  border: 3pt solid #ddd;
+  border: 3pt solid #aaa;
   border-style: double;
   box-sizing: border-box;
   box-shadow: 2pt 1pt 3pt #222;
@@ -87,4 +87,61 @@ label.checkbox-input > span.checkbox-content {
 label.checkbox-input > input[type="checkbox"]:checked ~ span.checkbox-content {
   transition: .25s;
   color: #eee;
+}
+
+@media screen and (max-width: 768px) {
+  label.checkbox-input {
+    display: block;
+    height: auto;
+    margin-left: 20pt;
+  }
+  /* label.checkbox-input + label.checkbox-input {
+    margin-top: 0pt;
+  } */
+  label.checkbox-input > span.checkbox-display {
+    width: 20pt;
+    height: 20pt;
+    border: 1pt solid #aaa;
+  }
+  label.checkbox-input:hover > span.checkbox-display {
+    background-color: #333;
+  }
+  label.checkbox-input > span.checkbox-content {
+    font-size: 10pt;
+    line-height: 20pt;
+    width: calc(100% - 30pt);
+    height: auto;
+  }
+  label.checkbox-input:hover > span.checkbox-content {
+    color: #bbb;
+  }
+  label.checkbox-input > span.checkbox-display:before,
+  label.checkbox-input > span.checkbox-display:after {
+    width: 10pt;
+    height: 1pt;
+    background-color: #888;
+    left: 4pt;
+    top: 9pt;
+  }
+  label.checkbox-input > span.checkbox-display:before {
+  }
+  label.checkbox-input > span.checkbox-display:after {
+  }
+  label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display { 
+  }
+  label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:before,
+  label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:after {
+  }
+  label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:before {
+    top: 12pt;
+    width: 6pt;
+  }
+  label.checkbox-input > input[type="checkbox"]:checked + span.checkbox-display:after {
+    top: 9pt;
+    left: 5pt;
+    width: 12pt;
+  }
+
+  label.checkbox-input > input[type="checkbox"]:checked ~ span.checkbox-content {
+  }
 }

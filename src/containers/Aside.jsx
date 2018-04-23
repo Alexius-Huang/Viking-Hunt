@@ -4,7 +4,9 @@ import './Aside.css';
 class Aside extends Component {
   constructor(props) {
     super(props);
+    this.state = { showAside: false };
     this.handleClick = this.handleClick.bind(this);
+    this.handleToggleAside = this.handleToggleAside.bind(this);
   }
 
   handleClick(id) {
@@ -14,11 +16,27 @@ class Aside extends Component {
     });
   }
 
+  handleToggleAside() {
+    this.setState({ showAside: !this.state.showAside });
+  }
+
   render() {
     const { content } = this.props;
+    const { showAside } = this.state;
+
     return (
-      <aside className="Aside" ref={(c) => { this.wrapper = c; }}>
-        <h5>Norwegian Learning Route</h5>
+      <aside
+        className={`Aside ${showAside ? 'mobile-show-aside' : ''}`}
+        ref={(c) => { this.wrapper = c; }}
+      >
+        <h5>
+          Hunting Route
+          <span className="toggler" onClick={this.handleToggleAside}>
+            <span />
+            <span />
+            <span />
+          </span>
+        </h5>
         
         <div className="aside-content">
           {
@@ -27,7 +45,8 @@ class Aside extends Component {
                 key={i}
                 onClick={(e) => {
                   e.preventDefault();
-                  this.handleClick(`#section-${i + 1}`)
+                  this.handleClick(`#section-${i + 1}`);
+                  if (showAside) { this.setState({ showAside: false }); }
                 }}
               >
                 {item}
