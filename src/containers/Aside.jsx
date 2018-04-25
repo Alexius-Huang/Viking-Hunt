@@ -83,7 +83,13 @@ Aside.defaultProps = {
     'Sentence Circumstance',
     'Adjective I - Rules',
     'Adjective II - Exceptions',
-    'Forming Sentences III - "det" Sentences'
+    'Forming Sentences III - "det" Sentences',
+    'Vocabulary III - Weather (et vær)',
+    'Word Order I - Principal Sentences',
+    'Word Order II - Principal Sentences in Question',
+    'Word Order III - Subordinate Sentences',
+    'Conversation V - Travel',
+    'Vocabulary IV - Days of the Week (ei/en uke)',
   ]
 }
 

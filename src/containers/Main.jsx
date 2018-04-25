@@ -3,6 +3,7 @@ import Section from './Grammer.Section';
 import Checkbox from '../components/Checkbox';
 import Table from '../components/Table';
 import List from '../components/List';
+import Audio from '../components/Audio';
 import './Main.css';
 
 function renderCheckboxes(arr) {
@@ -51,7 +52,8 @@ Main.defaultProps = {
     [
       'Norwegian Alphabets', [
         <p key={1}>Norwegian consists of 29 alphebet, with 26 common Latin alphabets and 3 special characters.</p>,
-        <p key={2}>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Å Ø</p>
+        <p key={2}>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Å Ø</p>,
+        <Audio key={3} />
       ]
     ],
     [
@@ -704,6 +706,36 @@ Main.defaultProps = {
     [
       'Forming Sentences III - "det" Sentences', [
         <p key={1}>Forming Sentences III - "det" Sentences</p>
+      ]
+    ],
+    [
+      'Vocabulary III - Weather (et vær)', [
+        <p key={1}>Vocabulary III - Weather (et vær)</p>
+      ]
+    ],
+    [
+      'Word Order I - Principal Sentences', [
+        <p key={1}>Word Order I - Principal Sentences</p>
+      ]
+    ],
+    [
+      'Word Order II - Principal Sentences in Question', [
+        <p key={1}>Word Order II - Principal Sentences in Question</p>
+      ]
+    ],
+    [
+      'Word Order III - Subordinate Sentences', [
+        <p key={1}>Word Order III - Subordinate Sentences</p>
+      ]
+    ],
+    [
+      'Conversation V - Travel', [
+        <p key={1}>Conversation V - Travel</p>
+      ]
+    ],
+    [
+      'Vocabulary IV - Days of the Week (ei/en uke)', [
+        <p key={1}>Vocabulary IV - Days of the Week (ei/en uke)</p>
       ]
     ]
   ]

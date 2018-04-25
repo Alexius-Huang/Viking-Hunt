@@ -1,0 +1,82 @@
+div.Audio {
+  display: inline-block;
+  font-size: 0;
+}
+
+div.Audio > div.microphone-icon {
+  display: inline-block;
+  width: 50pt;
+  height: 50pt;
+  box-sizing: border-box;
+  border-radius: 25pt;
+  border: 3pt double #666;
+  position: relative;
+}
+
+div.Audio > div.microphone-icon > span.rounded-border {
+  position: absolute;
+  width: 20pt;
+  height: 20pt;
+  border-top: 1pt solid transparent;
+  border-left: 1pt solid transparent;
+  border-right: 1pt solid #666;
+  border-bottom: 1pt solid #666;
+  border-radius: 10pt;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  top: 13.5pt;
+  left: 12.875pt;
+}
+
+div.Audio > div.microphone-icon > span.stick {
+  position: absolute;
+  border: .5pt solid #666;
+  background-color: #666;
+  width: 0;
+  height: 3pt;
+  left: 21.5pt;
+  top: 33.5pt;
+}
+
+div.Audio > div.microphone-icon > span.basis {
+  position: absolute;
+  border: .5pt solid #666;
+  background-color: #666;
+  width: 15pt;
+  height: 0;
+  left: 14.25pt;
+  top: 36.5pt;
+}
+
+div.Audio > div.microphone-icon > span.head-background {
+  position: absolute;
+  width: 15pt;
+  height: 25pt;
+  box-sizing: border-box;
+  border: 1pt solid #666;
+  border-radius: 17.5pt;
+  top: 6pt;
+  left: 15pt;
+}
+
+div.Audio > div.microphone-icon > span.head {
+  position: absolute;
+  width: 15pt;
+  height: 25pt;
+  box-sizing: border-box;
+  border: 1pt transparent #666;
+  border-radius: 17.5pt;
+  top: 6pt;
+  left: 15pt;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+div.Audio > div.microphone-icon > span.head > span.inner-head {
+  position: absolute;
+  width: 15pt;
+  height: 10pt;
+  top: 15pt;
+  left: -1pt;
+  background-color: #666;
+}
