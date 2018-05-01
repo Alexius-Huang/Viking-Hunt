@@ -780,7 +780,81 @@ Main.defaultProps = {
     ],
     [
       'Nouns II - Plural', [
-        <p key={1}>Plurals of nouns</p>
+        <p key={1}>Norwegian nouns are inflected for the grammatical number, meaning that if they are of the <strong>countable type</strong>, they generally have not only the singular but the <strong>plural</strong> form.</p>,
+        <p key={2}>Generally, the plural of <strong>masculine</strong> or <strong>feminine</strong> noun is made by <strong>adding the ending -r or -er</strong>, for instance:</p>,
+        <List key={3} stateless items={[
+          <span>en fisk {icon('long-arrow-right')} fisk<strong>er</strong></span>,
+          <span>en sjokoladeplate {icon('long-arrow-right')} sjokoladeplate<strong>r</strong></span>,
+          <span>en tomat {icon('long-arrow-right')} tomat<strong>er</strong></span>
+        ]} />,
+        <p key={4}>Plurals of the neuter nouns have special rules. If noun of the neuter gender is <strong>monosyllabic</strong>, that is, it has only one syllable, the plural will remain the same form as the singular form:</p>,
+        <List key={5} stateless items={[
+          <span>et hus {icon('long-arrow-right')} hus</span>,
+          <span>et barn {icon('long-arrow-right')} barn</span>,
+          <span>et brød {icon('long-arrow-right')} brød</span>
+        ]} />,
+        <p key={6}>If noun of the neuter gender is <strong>polysyllabic</strong>, that is, it has more than one syllables, the plural will behave the same as forming plural in masculine or feminine nouns:</p>,
+        <List key={7} stateless items={[
+          <span>et vindu {icon('long-arrow-right')} vindu<strong>er</strong></span>,
+          <span>et eple {icon('long-arrow-right')} eple<strong>r</strong></span>
+        ]} />,
+      ]
+    ],
+    [
+      'Vocabulary V - Irregular Plural Form', [
+        <List key={1} items={[
+          <span><strong>gulrot</strong> (m.) carrot (gulrøtter <i>(pl.)</i>)</span>,
+          <span><strong>brokkoli</strong> (m.) broccoli (brokkoler <i>(pl.)</i>)</span>,
+          <span><strong>and</strong> (m./f.) duck (ender <i>(pl.)</i>)</span>,
+          <span><strong>bok</strong> (m./f.) book (bøker <i>(pl.)</i>)</span>,
+          <span><strong>bonde</strong> (m.) peasants / farmer / pawn (bønder <i>(pl.)</i>)</span>,
+          <span><strong>fot</strong> (m.) foot (føtter <i>(pl.)</i>)</span>,
+          <span><strong>hånd</strong> (m./f.) hand (hender <i>(pl.)</i>)</span>,
+          <span><strong>håndkle</strong> (n.) towel (håndklær <i>(pl.)</i>)</span>,
+          <span><strong>kne</strong> (n.) knee (knær <i>(pl.)</i>)</span>,
+          <span><strong>kraft</strong> (m./f.) strength / force (krefter <i>(pl.)</i>)</span>,
+          <span><strong>bok</strong> (m./f.) book (bøker <i>(pl.)</i>)</span>,
+          <span><strong>ku</strong> (m./f.) cow (kyr <i>(pl.)</i>)</span>,
+          <span><strong>natt</strong> (m./f.) night (netter <i>(pl.)</i>)</span>,
+          <span><strong>mann</strong> (m.) man (menn <i>(pl.)</i>)</span>,
+          <span><strong>rand</strong> (m./f.) edge (render <i>(pl.)</i>)</span>,
+          <span><strong>rot</strong> (m./f.) root (røtter <i>(pl.)</i>)</span>,
+          <span><strong>sted</strong> (n.) place / spot / site (steder <i>(pl.)</i>)</span>,
+          <span><strong>stang</strong> (m./f.) bar (stenger <i>(pl.)</i>)</span>,
+          <span><strong>strand</strong> (n.) beach (strender <i>(pl.)</i>)</span>,
+          <span><strong>tann</strong> (m./f.) tooth (tenner <i>(pl.)</i>)</span>,
+          <span><strong>tre</strong> (n.) tree / wood (trær <i>(pl.)</i>)</span>,
+          <span><strong>tå</strong> (m./f.) toe (tær <i>(pl.)</i>)</span>,
+          <span><strong>øye</strong> (n.) eye (øyne <i>(pl.)</i>)</span>,
+          <span><strong>angrep</strong> (n.) attack / assault (angrep <i>(pl.)</i>)</span>,
+          <span><strong>besøk</strong> (n.) visit (besøk <i>(pl.)</i>)</span>,
+          <span><strong>eventyr</strong> (n.) fairytale / story / adventure (eventyr <i>(pl.)</i>)</span>,
+          <span><strong>feil</strong> (m.) error / mistake (feil <i>(pl.)</i>)</span>,
+          <span><strong>forhold</strong> (n.) circumstance / relation / affair (forhold <i>(pl.)</i>)</span>,
+          <span><strong>høve</strong> (n.) opportunity (høve <i>(pl.)</i>)</span>,
+          <span><strong>kreps</strong> (m.) crawflish (kreps <i>(pl.)</i>)</span>,
+          <span><strong>mus</strong> (m./f.) mouse (mus <i>(pl.)</i>)</span>,
+          <span><strong>mygg</strong> (m.) mosquito (mygg <i>(pl.)</i>)</span>,
+          <span><strong>sild</strong> (m./f.) herring (sild <i>(pl.)</i>)</span>,
+          <span><strong>sko</strong> (m.) shoe(s) (sko <i>(pl.)</i>)</span>,
+          <span><strong>kreps</strong> (m.) crawflish (kreps <i>(pl.)</i>)</span>,
+          <span><strong>ting</strong> (m.) thing / stuff (ting <i>(pl.)</i>)</span>,
+          <span><strong>våpen</strong> (n.) weapon / armament (våpen <i>(pl.)</i>)</span>
+        ]} />
+      ]
+    ],
+    [
+      'Nouns III - Countable & Uncountable', [
+        <p key={1}><strong>Countable</strong> nouns have both singular and plural form. However, consider some special nouns listed below:</p>,
+        <List key={2} stateless items={[
+          <span><strong>en luft</strong> (air)</span>,
+          <span><strong>en melk</strong> (milk)</span>,
+          <span><strong>en saft</strong> / <strong>en jus</strong> (juice with/without sugar)</span>,
+          <span><strong>et vann</strong> (water)</span>
+        ]} />,
+        <p key={3}>Since we cannot count air, milk, juice or water, hence they are so-called <strong>uncountable</strong> nouns. Such kind of nouns <strong>do not have plural form</strong>.</p>,
+        <p key={4}>The usage of <strong>"mange"</strong> (many) follows a countable nouns, for instance: <strong>mange</strong> grønnsaker (many / lot of vegatables)</p>,
+        <p key={5}>On the other hand, use <strong>"mye"</strong> (much) in condition of uncountable nouns, for instance: <strong>mye</strong> vann (lots of water) / <strong>mye</strong> melk (lots of milk)</p>
       ]
     ],
     [
