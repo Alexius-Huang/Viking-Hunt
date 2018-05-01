@@ -330,6 +330,47 @@ Main.defaultProps = {
       ]
     ],
     [
+      'Vocabulary II - Common Verbs', [
+        <List
+          key={1}
+          items={[
+            <span><strong>å se</strong> (v.) to see / watch</span>,
+            <span><strong>å høre</strong> (v.) to listen</span>,
+            <span><strong>å drikke</strong> (v.) to drink</span>,
+            <span><strong>å spise</strong> (v.) to eat</span>,
+            <span><strong>å like</strong> (v.) to like</span>,
+            <span><strong>å si</strong> (v.) to tell (presens: <strong>sier</strong>)</span>,
+            <span><strong>å male</strong> (v.) to paint</span>,
+            <span><strong>å bake</strong> (v.) to bake</span>,
+            <span><strong>å hjelpe</strong> (v.) to help</span>,
+            <span><strong>å tenke</strong> (v.) to think</span>,
+            <span><strong>å forstette</strong> (v.) to continue</span>,
+            <span><strong>å sveise</strong> (v.) to weld</span>,
+            <span><strong>å kjøre</strong> (v.) to drive</span>,
+            <span><strong>å behandle</strong> (v.) to heal</span>,
+            <span><strong>å ragne</strong> (v.) to count</span>,
+            <span><strong>å dyrke</strong> (v.) to cultivate / grow</span>,
+            <span><strong>å arbeide</strong> (v.) to work / operate</span>,
+            <span><strong>å levere</strong> (v.) to deliver</span>,
+            <span><strong>å studere</strong> (v.) to study</span>,
+            <span><strong>å lede</strong> (v.) to lead / guide / conduct</span>,
+            <span><strong>å yte</strong> (v.) to give / provide</span>,
+            <span><strong>å koke</strong> (v.) to cook / boil</span>,
+            <span><strong>å gjøre</strong> (v.) to do / act / make</span>,
+            <span><strong>å avslutte</strong> (v.) to finish</span>
+          ]}
+        />,
+        <p key={2}>Some common usage:</p>,
+        <List
+          key={3} stateless items={[
+            <span>å se på norsk TV (to watch Norwegian TV shows)</span>,
+            <span>å høre på norsk radio (to listen to Norwegian radio)</span>,
+            <span>å høre på norske sange (to listen to Norwegian songs)</span>
+          ]}
+        />
+      ]
+    ],
+    [
       'Forming Sentences I - Basics', [
         <p key={1}>Basic setence structure usually starts with a <strong>subject (subjekt)</strong>.</p>,
         <p key={2}>The second place must comes with a <strong>predicate (predikat) which describes an action</strong>.</p>,
@@ -435,7 +476,7 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Vocabulary - Professions (et yrke)', [
+      'Vocabulary III - Professions (et yrke)', [
         <p key={1}>Asking people's profession:</p>,
         renderCheckboxes([
           <span><strong>Hva er ditt yrke?</strong> (What is your profession?)</span>,
@@ -475,7 +516,8 @@ Main.defaultProps = {
             'frisør (m./f.) hair dresser',
             'servitør (m./f.) waiter',
             'skredder (m./f.) tailor',
-            'snekker (m./f.) carpenter'
+            'snekker (m./f.) carpenter',
+            'kasserer (m.) / kassadame (f.) cashier'
           ]}
         />,
         <p key={4}>Hint: "Truck" in Norwegian is fork-lift instead of "truck"</p>,
@@ -674,8 +716,66 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Vocabulary II', [
-        <p key={1}>Vocabulary II</p>
+      'Vocabulary IV - Food & Drinks', [
+        <p key={1}>List of Drinks</p>,
+        <List
+          key={2}
+          items={[
+            <span><strong>drikke</strong> (n.) drink</span>,
+            <span><strong>vann</strong> (n.) water</span>,
+            <span><strong>melk</strong> (m.) milk</span>,
+            <span><strong>jus / juice</strong> (m.) juice (without sugar)</span>,
+            <span><strong>saft</strong> (m./f.) juice (with sugar)</span>,
+            <span><strong>brus</strong> (m.) soda</span>,
+            <span><strong>kaffe</strong> (m.) coffee</span>,
+            <span><strong>te</strong> (m.) tea</span>,
+            <span><strong>øl</strong> (n.) beer</span>,
+            <span><strong>vin</strong> (m.) wine</span>,
+          ]}
+        />,
+        <p key={3}>List of Foods</p>,
+        <List
+          key={4}
+          items={[
+            <span><strong>brød</strong> (n.) bread</span>,
+            <span><strong>sjokoladeplate</strong> (m./f.) chocolate bar</span>,
+            <span><strong>agurk</strong> (m.) cucumber</span>,
+            <span><strong>bønne</strong> (m./f.) bean</span>,
+            <span><strong>kjøtt</strong> (n.) meat</span>,
+            <span><strong>svinekjøtt</strong> (n.) pork</span>,
+            <span><strong>kyllingkjøtt</strong> (n.) chicken meat</span>,
+            <span><strong>oksekjøtt / storfekjøtt</strong> (n.) beef</span>,
+            <span><strong>kalkunkjøtt</strong> (n.) turkey meat</span>,
+            <span><strong>grønnsak</strong> (m.) vegatable</span>,
+            <span><strong>kål</strong> (m.) cabbage</span>,
+            <span><strong>hodekål</strong> (m.) head of cabbage</span>,
+            <span><strong>gulrot</strong> (m.) carrot (gulrøtter <i>(pl.)</i>)</span>,
+            <span><strong>brokkoli</strong> (m.) broccoli (brokkoler <i>(pl.)</i>)</span>,
+            <span><strong>paprika</strong> (m.) pepper</span>,
+            <span><strong>potet</strong> (m.) potato</span>,
+            <span><strong>løk</strong> (m.) onion</span>,
+            <span><strong>hvitløk</strong> (m.) garlic</span>,
+            <span><strong>frukt</strong> (m.) fruit</span>,
+            <span><strong>ananas</strong> (m.) pineapple</span>,
+            <span><strong>pære</strong> (m./f.) pear</span>,
+            <span><strong>banan</strong> (m.) banana</span>,
+            <span><strong>sitron</strong> (m.) lemon</span>,
+            <span><strong>mango</strong> (m.) mango</span>,
+            <span><strong>kiwi</strong> (m.) kiwi</span>
+          ]}
+        />,
+        <p key={5}>Extended vocabularies:</p>,
+        <List
+          key={6}
+          stateless items={[
+            <span><strong>ett brød</strong> one loaf of bread</span>,
+            <span><strong>grønn te</strong> (m.) green tea</span>,
+            <span><strong>svart te</strong> (m.) black tea</span>,
+            <span><strong>rødvin</strong> (m.) red wine</span>,
+            <span><strong>hvitvin</strong> (m.) white wine</span>,
+            <span><strong>vinmonopol</strong> (n.) wine shop / liquor store</span>,
+          ]}
+        />
       ]
     ],
     [
@@ -709,7 +809,7 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Vocabulary III - Weather (et vær)', [
+      'Vocabulary V - Weather (et vær)', [
         <p key={1}>Vocabulary III - Weather (et vær)</p>
       ]
     ],
@@ -734,7 +834,7 @@ Main.defaultProps = {
       ]
     ],
     [
-      'Vocabulary IV - Days of the Week (ei/en uke)', [
+      'Vocabulary VI - Days of the Week (ei/en uke)', [
         <p key={1}>Vocabulary IV - Days of the Week (ei/en uke)</p>
       ]
     ]
