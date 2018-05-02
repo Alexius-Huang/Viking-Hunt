@@ -23,7 +23,10 @@ section.grammer-section > article:before {
   border-left: 1pt solid #aaa;
   left: 40pt;
 }
-section.grammer-section > article > p {
+section.grammer-section > article > div.content-wrapper + div.content-wrapper {
+  margin-top: 10pt;
+}
+section.grammer-section > article > div.content-wrapper > p {
   margin: 0;
   height: auto;
   box-sizing: border-box;
@@ -35,17 +38,17 @@ section.grammer-section > article > p {
   border-radius: 3pt;
   transition: .25s;
 }
-section.grammer-section > article > p::selection,
-section.grammer-section > article > p > strong::selection,
-section.grammer-section > article > p > i::selection {
+section.grammer-section > article > div.content-wrapper > p::selection,
+section.grammer-section > article > div.content-wrapper > p > strong::selection,
+section.grammer-section > article > div.content-wrapper > p > i::selection {
   color: #333;
   background-color: #fff;
 }
-section.grammer-section > article > p:hover {
+section.grammer-section > article > div.content-wrapper > p:hover {
   background-color: #444;
   transition: .25s;
 }
-section.grammer-section > article > p:before {
+section.grammer-section > article > div.content-wrapper > p:before {
   display: inline-block;
   content: '';
   width: 8pt;
@@ -56,11 +59,11 @@ section.grammer-section > article > p:before {
   line-height: 20pt;
   transform: rotate(45deg);
 }
-section.grammer-section > article > p + :not(p),
-section.grammer-section > article > p:not(:first-child) {
+section.grammer-section > article > div.content-wrapper > p + :not(p),
+section.grammer-section > article > div.content-wrapper > p:not(:first-child) {
   margin-top: 10pt;
 }
-section.grammer-section > article > p > a {
+section.grammer-section > article > div.content-wrapper > p > a {
   color: #ddd;
 }
 
@@ -223,15 +226,16 @@ section.grammer-section.completed > div.label-header > h2.caption > button.compl
   section.grammer-section > article:before {
     display: none;
   }
-  section.grammer-section > article > p {
+  
+  section.grammer-section > article > div.content-wrapper > p {
     width: 100vw;
     padding: 0 20pt;
     font-size: 10pt;
   }
-  section.grammer-section > article > p:hover {
+  section.grammer-section > article > div.content-wrapper > p:hover {
     background-color: #333;
   }
-  section.grammer-section > article > p + :not(p) {
+  section.grammer-section > article > div.content-wrapper > p + :not(p) {
     margin-top: 15pt;
   }
 

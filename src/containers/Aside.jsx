@@ -82,7 +82,7 @@ Aside.defaultProps = {
     'Nouns II - Plurals',
     'Vocabulary V - Irregular Plural Form',
     'Nouns III - Countable & Uncountable',
-    'Negative Sentences',
+    'Conversation V - Negative Sentences',
     'Sentence Circumstance',
     'Adjective I - Rules',
     'Adjective II - Exceptions',
@@ -91,7 +91,7 @@ Aside.defaultProps = {
     'Word Order I - Principal Sentences',
     'Word Order II - Principal Sentences in Question',
     'Word Order III - Subordinate Sentences',
-    'Conversation V - Travel',
+    'Conversation VI - Travel',
     'Vocabulary VII - Days of the Week (ei/en uke)',
   ]
 }
