@@ -810,7 +810,36 @@ Main.defaultProps = {
     ],
     [
       'Sentence Circumstance', [
-        <p>Sentence Circumstance (setningsadverbial)</p>
+        <p>Sentence circumstance (setningsadverbial) or adverbs goes <strong>after the predicate</strong> or <strong>the first word of the predicate</strong> which have different effect on sentence. Here are the list of common adverbs, more information will be presented in the other section.</p>,
+        <List items={[
+          <span><strong>sikkert</strong> (for sure / with no doubt / certainly)</span>,
+          <span><strong>likevel</strong> (however / still / anyway / nevertheless)</span>,
+          <span><strong>kanskje</strong> (maybe)</span>,
+          <span><strong>bare</strong> (only)</span>,
+          <span><strong>også</strong> (also)</span>,
+          <span><strong>egentilg</strong> (really / actually)</span>,
+          <span><strong>forresten</strong> (by the way)</span>,
+          <span><strong>altså</strong> (so / therefore)</span>,
+          <span><strong>forresten</strong> (by the way)</span>,
+        ]} />,
+        <p>Hint: <strong>"ikke"</strong> is also a kind of sentence circumstance which represent negative meaning of the sentence. In other words, it means "not" in English.</p>,
+        <p>Examples:</p>,
+        <List stateless items={[
+          <span>Maxwell kommer <strong>sikkert</strong> i dag. (Maxwell will for sure come today.)</span>,
+          <span>Maxwell kommer <strong>likevel</strong> i dag. (Maxwell will still come today.)</span>,
+          <span>Maxwell kommer <strong>kanskje</strong> i dag. (Maxwell will maybe come today.)</span>,
+          <span>Maxwell kommer <strong>bare</strong> i dag. (Maxwell will only come today.)</span>,
+          <span>Maxwell kommer <strong>også</strong> i dag. (Maxwell will also come today.)</span>,
+          <span>Maxwell kommer <strong>egentilg</strong> i dag. (Maxwell will actually come today.)</span>,
+          <span>Maxwell kommer <strong>forresten</strong> i dag. (Maxwell will come today, by the way.)</span>,
+          <span>Maxwell kommer <strong>altså</strong> i dag. (Therefore, Maxwell will come today.)</span>,
+          <span>Maxwell kommer <strong>forresten</strong> i dag. (Maxwell will come today, by the way.)</span>,
+          <span>Jeg liker <strong>ikke</strong> å gå på kino. (I don't like to go to the cinema.)</span>,
+          <span>Vi skal <strong>forresten</strong> gå i barnehage. (We, by the way, are going to the kindergarten.)</span>,
+          <span>Dere kommer <strong>bare</strong> i dag. (You will come only today.)</span>,
+          <span>Maxwell skal <strong>sikkert</strong> spise salat. (Maxwell will have/eat salad, for sure.)</span>,
+          <span>Han vil <strong>kanskje</strong> ta oppvasken. (He will maybe clean the dishes.)</span>
+        ]} />
       ]
     ],
     [
